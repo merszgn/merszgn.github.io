@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>personally, me.</title>
+    <link href="/meryem.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Redacted+Script:wght@300;400;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+    <script>
+        window.addEventListener('load', function () {
+            document.body.classList.add('fade-in');
+        });
+    </script>
+    <aside>
+        <img src="aside.jpg" height="auto" width="280px" style="margin-top: 10px;">
+        <header>MERYEM.</header>
+        <hr>
+        <p>Who <i>is</i> she? Take a peek into the world's most beautiful and intelligent girl's life..!</p>
+        <p><i>In a short description, I'm a sixteen year old Middle Eastern girl from California's Silicon Valley who
+                spends most of her time working on her D&D campaign or stressing over school!</i></p>
+    </aside>
+
+    <article>
+        <main>
+            <div id="about" class="tabcontent">
+                <header>Pomegranatalia</header>
+                <p>
+                    My favorite fruit has always been pomegranates. In a verbatim sense, the red juice and crunch of its seeds fills an aperture in my body that I forget exists. Metaphorically–yet so literally–, this fruit is my soul. One can husk the outer shell to get to the sweet core; the memories, the psyche, and the accumulation of human emotion. Its sole existence is a manifestation of human life. Unlike other fruit, it offers knowledge. Solitaries suchlike seedless grapes and coconuts only embody humanity of a trivial scale and a vain confidence beyond inferior comprehension. But what does a pomegranate suggest? Does it personify all aspects of extant life or detach the virtuous and heinous into conventional classes? I have spent years contemplating this on my lonesome. I consume hours of my time a day cerebrating around pomegranates and their value.
+                    </p>
+                    <p>
+                    My mind is a disarray of perplexity and complicated thoughts that I cannot elucidate to most others. I struggle to find the words to illustrate my habits whilst my peers make sense of the world simply by being. I cannot find it in myself to do the same. I have tried. I have attempted to sit and understand the world through simply… <i>understanding</i> it. Telling myself the complexity is fabricated and present to deceive me. Perhaps it is true, perhaps it is not. Regardless, I am unable to relate to this approach of reasoning. I have succumbed and accepted that my brain just does not experience and make sense of things the way that others’ do. I search for the intricacy in everything and lose myself in the process. One day, I recall becoming so weary of hauling around this hunger for clarity in an uncertain world. I wanted to stop pinning the blame of being so burdensome onto myself and needed to channel the energy into something else, something that could understand everything without saying anything. And in that moment, in front of me on the table, was a bowl of pomegranates. They heaped up onto each other and possessed vibrant hues of distinct shades of red. The skin bruised and coarse, speckled and imperfect. The core attached together by intricate webs of membrane and seeds comprising the bliss and the mold of its fruit. What a perfectly imperfect manifestation of what it means to be human. So, I did what I had to and I began to condemn the heaviness of existing onto pomegranates. It began as a senseless bit; I would go through agonizing misery and convince myself it was the pomegranates’ fault. Everything terrible happened because of the pomegranates. After, I would consume their seeds and swallow the sadness to dissolve in my stomach into utter nothingness. The world started to make sense through this minor delusion of mine. Eventually, it ceased being a senseless bit. I began to truly have myself convinced that all my wrongs and all my unfortunate events were results of the existence of pomegranates. My avoidance of the fruit came short after. I felt nauseous just thinking about the specific shade of red they all seemed to be. My brain had associated terrible outcomes with the measly fruit. What a surprise. However, this problem was not all that difficult. The complexity within it was the psychological factor affecting me. So I began to force down a couple seeds whenever I felt a rush of joy. I was slowly reverting my senses back to their usual miserable condition. At this point of my awkward, disturbing self-experiment, even the slightest feeling of serotonin brought the smell of pomegranates to my senses. The dry smell of sweet, mouth-watering seeds would relentlessly follow me everywhere I went. 
+                    </p>
+                    <p>
+                    I became more and more obsessed with this odd image of pomegranates I had created in my head. I wanted to really be able to view my life through the perspective of a pomegranate. I wanted to base my life around it. I guess it was a result of finally having an outlet that helped me understand the world. I was too afraid to let go of this idea now, too afraid to revert back to my numbed lack of realism. I even started to explain this idea to others in hopes that it would become a common ground for me to finally be able to relate my methodology to others. It did not push me in the direction I hoped for. I was told endlessly that I read too much into the little things and over complicated everything I came across. I should take things at face value. I should stop searching for answers to questions that do not exist. I should stay at surface-level because going below was not ideal for a person who cannot swim in deepwater.
+                    </p>
+                    
+
+
+            </div>
+
+            <div id="dislikes" class="tabcontent">
+                second page
+            </div>
+
+            <div id="interests" class="tabcontent">
+                third page
+            </div>
+
+            <div id="journal" class="tabcontent">
+                fourth page
+            </div>
+
+            <div id="fifth" class="tabcontent">
+                fifth page
+            </div>
+        </main>
+        <nav>
+            <button class="tablinks" id="defaultOpen" onclick="openPage(event, 'about')">ABOUT</button>
+            <button class="tablinks" onclick="openPage(event, 'dislikes')">(DiS)LiKES</button>
+            <button class="tablinks" onclick="openPage(event, 'interests')">iNTERESTS</button>
+            <button class="tablinks" onclick="openPage(event, 'journal')">JOURNAL</button>
+            <button class="tablinks" onclick="openPage(event, 'fifth')">fifth</button>
+        </nav>
+    </article>
+
+</body>
+
+</html>
+<script>
+    function openPage(evt, pageName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(pageName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+</script>

@@ -1,0 +1,122 @@
+@font-face {
+  font-family: Monsieur;
+  src: url("\MonsieurLaDoulaise-Regular.ttf");
+}
+
+* {
+  color: #3d2f1c;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+::selection {
+  color: #3d2f1c;
+  background-color: #9CA48Bb9;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  background-color: #F8FDEB;
+  filter: blur(0.5px);
+}
+
+body {
+  margin: 2% 0;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+aside,
+article {
+  margin: 0 10px;
+  height: 500px;
+  background: #fffff4;
+}
+
+aside {
+  display: inline-block;
+  width: 300px;
+  border: 1px solid #3d2f1c;
+  transform: rotate(-2deg);
+}
+
+aside img {
+  border: 1px solid #3d2f1c;
+}
+
+aside header {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 10px;
+}
+
+aside hr {
+  border: 0.5px solid #3d2f1c;
+  margin: -1px;
+  margin-right: 20%;
+}
+
+aside p {
+  text-align: justify;
+  padding: 0 10px;
+  margin: 8px;
+}
+
+article {
+  margin-top: 40px;
+  display: inline-block;
+  width: 700px;
+  border: 1px solid #3d2f1c;
+  transform: rotate(1deg);
+  vertical-align: top;
+}
+
+article p {
+  padding: 0 10px;
+  text-indent: 20px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+main {
+  vertical-align: top;
+  overflow-y: scroll;
+  height: 96%;
+}
+
+nav {
+  border-top: 1px solid #3d2f1c;
+  width: inherit;
+  height: fit-content;
+  vertical-align: bottom;
+}
+
+.tabcontent {
+  border-top: none;
+  padding: 5px;
+}
+
+article header {
+  font-size: 25px;
+  font-weight: bolder;
+  display: inline-block;
+  padding: 0 5px;
+  font-style: italic;
+  text-align: center;
+}
+
+.tablinks {
+  background-color: inherit;
+  cursor: copy;
+  font-size: 15px;
+  border: none;
+}
