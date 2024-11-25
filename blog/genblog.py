@@ -26,11 +26,10 @@ def generate_page(page_number, posts_for_page):
         <div class="post">
             <h2>{post['title']}</h2>
             <p style="font-size: 12px;"><em>{post['date']}</em></p>
-            <p id="blogcontent">{post['content']}...</p>
+            <p id="blogcontent">{post['content']}</p>
         """
         if index < len(posts_for_page) - 1:
-            post_html += "<hr>"
-            post_html += "</div>"
+            post_html += "<hr></div>"
         posts_html += post_html
 
     html_content = template_content.replace('<div class="container" id="posts-container"></div>', f'<div class="container" id="posts-container">{posts_html}</div>')
