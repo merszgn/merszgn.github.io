@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blog, no.1</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+        * {
+  color: #725c3f;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+::selection {
+  color: #fdcbc7;
+  background-color: #725c3fb9;
+}
+
+html {
+  background-color: #F8FDEB;
+  filter: blur(0.5px);
+  text-align: center;
+}
+
+body {
+  display: inline-block;
+  width: 1010px;
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+h1 {
+    text-align: right;
+}
+
+h2 {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+#blogcontent {
+    width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.container {
+    border: 1px dotted #725c3f;
+    width: 1000px;
+    height: fit-content;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+hr {
+    width: 800px;
+    border: 0.5px dotted #725c3f;
+}
+
+.pagination {
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+    <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+    <script>
+        window.addEventListener('load', function () {
+            document.body.classList.add('fade-in');
+        });
+    </script>
+    <h1>blog.</h1>
+
+    <div class="container" id="posts-container">
+        <div class="post">
+            <h2>First Blog Post</h2>
+            <p style="font-size: 12px;"><em>Nov 24 2024, 10:54PM</em></p>
+            <p id="blogcontent">Hello! This is an entry for my first blog post. This is mainly just a test, I am trying to debug some issues I have been having with the code. I think I have fixed it for now. Originally, I was planning on using an SQL file to store the data nad parse it with python but I decided to go with JSON instead since it would be easier. If I end up with way too many posts then I might have to switch to postgresql, but for now I'll have to bare with this. I'll also work on the css and layout of this page later. I'm really tired. I might reuse this code for my update log, too. I'll have to tweak it a bit though....</p>
+        <hr></div>
+        <div class="post">
+            <h2>Second Blog Post</h2>
+            <p style="font-size: 12px;"><em>N/A</em></p>
+            <p id="blogcontent">This is the content of the second blog post....</p>
+        <hr></div>
+        <div class="post">
+            <h2>Third Blog Post</h2>
+            <p style="font-size: 12px;"><em>N/A</em></p>
+            <p id="blogcontent">This is the content of the third blog post....</p>
+        </div>
+    </div>
+
+
+    <div class="pagination">
+        <a href="page2.html">previous</a> | <a href="page2.html">next</a>
+    </div>
+</body>
+</html>

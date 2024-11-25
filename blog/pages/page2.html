@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blog, no.2</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+        * {
+  color: #725c3f;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+::selection {
+  color: #fdcbc7;
+  background-color: #725c3fb9;
+}
+
+html {
+  background-color: #F8FDEB;
+  filter: blur(0.5px);
+  text-align: center;
+}
+
+body {
+  display: inline-block;
+  width: 1010px;
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+h1 {
+    text-align: right;
+}
+
+h2 {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+#blogcontent {
+    width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.container {
+    border: 1px dotted #725c3f;
+    width: 1000px;
+    height: fit-content;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+hr {
+    width: 800px;
+    border: 0.5px dotted #725c3f;
+}
+
+.pagination {
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+    <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+    <script>
+        window.addEventListener('load', function () {
+            document.body.classList.add('fade-in');
+        });
+    </script>
+    <h1>blog.</h1>
+
+    <div class="container" id="posts-container">
+        <div class="post">
+            <h2>Fourth Blog Post</h2>
+            <p style="font-size: 12px;"><em>N/A</em></p>
+            <p id="blogcontent">This is the content of the fourth blog post....</p>
+        <hr></div>
+        <div class="post">
+            <h2>Fifth Blog Post</h2>
+            <p style="font-size: 12px;"><em>N/A</em></p>
+            <p id="blogcontent">This is the content of the fifth blog post....</p>
+        <hr></div>
+        <div class="post">
+            <h2>Sixth Blog Post</h2>
+            <p style="font-size: 12px;"><em>N/A</em></p>
+            <p id="blogcontent">This is the content of the sixth blog post....</p>
+        </div>
+    </div>
+
+
+    <div class="pagination">
+        <a href="page1.html">previous</a> | <a href="page1.html">next</a>
+    </div>
+</body>
+</html>
