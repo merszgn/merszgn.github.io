@@ -1,11 +1,9 @@
 let currentPage = parseInt(document.body.dataset.page, 10) || 1;
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Fetch the posts.json file to use for modal functionality
     fetch('posts.json')
         .then(response => response.json())
         .then(posts => {
-            // Add event listeners to Read More buttons
             const readMoreButtons = document.querySelectorAll('.read-more');
             readMoreButtons.forEach(button => {
                 button.addEventListener('click', function () {
@@ -19,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .catch(error => console.error('Error loading posts:', error));
 
-    // Set the page title
     updatePageTitle();
 });
 
