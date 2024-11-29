@@ -24,7 +24,8 @@ html {
 }
 
 body {
-  margin: 2% 0;
+  margin: 0 auto;
+  margin-top: 2%;
   text-align: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -62,7 +63,7 @@ aside header {
 
 aside hr {
   border: 0.5px solid #3d2f1c;
-  margin: -1px;
+  margin: 0px;
   margin-right: 20%;
 }
 
