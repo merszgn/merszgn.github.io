@@ -189,6 +189,9 @@ nav p a:visited {
 nav a:hover {
     color: #C97678;
     font-size: 12px;
+    -webkit-animation: linkhover 5s infinite;
+    -moz-animation: linkhover 5s infinite;
+    animation: linkhover 5s infinite;
 }
 
 @keyframes linkhover {

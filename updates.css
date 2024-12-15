@@ -1,11 +1,16 @@
 * {
   color: #725c3f;
-  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
 }
 
 ::selection {
   color: #fdcbc7;
   background-color: #725c3fb9;
+}
+
+@font-face {
+  font-family: Nanum;
+  src: url('../fonts/NanumGothicCoding-Regular.ttf');
 }
 
 html {
@@ -16,7 +21,10 @@ html {
 
 body {
   display: inline-block;
-  width: 1010px;
+  font-family: "Nanum";
+  max-width: min-content;
+  background: #fdcbc7;
+
   margin-top: 20px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -24,4 +32,134 @@ body {
 
 body.fade-in {
   opacity: 1;
+}
+
+header {
+  background: url("/IMAGES/updateheader.jpg");
+  width: inherit;
+  height: 100px;
+  background-size: 300px;
+  border: 1px dotted #685654;
+  margin-bottom: 3px;
+}
+
+header section {
+  float: left;
+  position: absolute;
+  padding: 55px 0 0 10px;
+  z-index: 1000;
+  display: block;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 50px;
+  font-style: italic;
+  text-shadow: 0px 0px 0px #fdcbc7, 1px -1px 0 #fdcbc7, 0 0 0 #fdcbc7,
+    -1px 0 0 #fdcbc7, 1px 0px 0 #fdcbc7, 0px 2px 0 #fdcbc7, -2px 0px 0 #fdcbc7,
+    0px -2px 0 #fdcbc7, 2px 3px 2px #d8d7b2;
+}
+
+header p {
+  display: inline-block;
+  margin-left: -5px;
+  font-style: italic;
+  font-weight: bold;
+  color: #fdcbc7;
+  -webkit-animation: articlehover 2s infinite;
+  -moz-animation: articlehover 2s infinite;
+  animation: articlehover 2s infinite;
+}
+
+@keyframes articlehover {
+  0% {
+    color: #725c3f;
+    text-shadow: 0px 0px 0px #fdcbc7, 1px -1px 0 #fdcbc7, 0 0 0 #fdcbc7,
+      -1px 0 0 #fdcbc7, 1px 0px 0 #fdcbc7, 0px 2px 0 #fdcbc7, -2px 0px 0 #fdcbc7,
+      0px -2px 0 #fdcbc7, 2px 3px 2px #d8d7b2;
+  }
+
+  50% {
+    color: #fdcbc7;
+    text-shadow: 0px 0px 0px #685654, 1px -1px 0 #685654, 0 0 0 #685654,
+      -1px 0 0 #685654, 1px 0px 0 #685654, 0px 2px 0 #685654, -2px 0px 0 #685654,
+      0px -2px 0 #685654, 2px 3px 2px rgb(92, 25, 42);
+  }
+
+  100% {
+    color: #725c3f;
+    text-shadow: 0px 0px 0px #fdcbc7, 1px -1px 0 #fdcbc7, 0 0 0 #fdcbc7,
+      -1px 0 0 #fdcbc7, 1px 0px 0 #fdcbc7, 0px 2px 0 #fdcbc7, -2px 0px 0 #fdcbc7,
+      0px -2px 0 #fdcbc7, 2px 3px 2px #d8d7b2;
+  }
+}
+
+main {
+  background: url("/IMAGES/updatebackground.jpg");
+  background-size: 300px;
+  min-width: max-content;
+  max-width: min-content;
+  border: 1px ridge #725c3f;
+  border-radius: 5px;
+  padding-bottom: 2px;
+}
+
+section {
+  display: inline-block;
+}
+
+aside {
+  min-width: 200px;
+  max-width: 200px;
+  height: 350px;
+  padding: 0;
+  margin: 0;
+  border: 1px dotted #725c3f;
+  vertical-align: top;
+  margin-left: 2px;
+  background: #FFFBF2;
+}
+
+aside h1 {
+  background: url("/IMAGES/updatebackground.jpg");
+  background-size: 200px;
+  text-align: center;
+  padding: 8px;
+  margin: 0;
+  border-bottom: 1px ridge #725c3f;
+  font-weight: bolder;
+  font-size: 17px;
+  color: #FAF8E3;
+  text-shadow: 0px 0px 0px #685654, 1px -1px 0 #685654, 0 0 0 #685654,
+    -1px 0 0 #685654, 1px 0px 0 #685654, 0px 2px 0 #685654, -2px 0px 0 #685654,
+    0px -2px 0 #685654, 2px 3px 2px rgb(92, 25, 42);
+}
+
+aside p {
+  padding: 0 10px;
+  font-size: 13px;
+  text-indent: 10px;
+  text-align: justify;
+}
+
+aside a {
+  color: #C97678
+}
+
+aside a:hover {
+  color: #C97678;
+  font-size: 12px;
+}
+
+article {
+  min-width: max-content;
+  max-width: min-content;
+  height: 500px;
+  border: 1px dotted #725c3f;
+  border-bottom-right-radius: 5px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2px;
+  background: #FFFBF2;
 }
