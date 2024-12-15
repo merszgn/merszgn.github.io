@@ -1,7 +1,7 @@
 let currentPage = parseInt(document.body.dataset.page, 10) || 1;
 
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('posts.json')
+    fetch('/blog/posts.json')
         .then(response => response.json())
         .then(posts => {
             const readMoreButtons = document.querySelectorAll('.read-more');
@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 button.addEventListener('click', function () {
                     const postId = parseInt(this.dataset.postId, 10);
                     const post = posts.find(p => p.id === postId);
+                    console.log(post);
                     if (post) {
                         openModal(post);
                     }
@@ -17,14 +18,14 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .catch(error => console.error('Error loading posts:', error));
 
-    updatePageTitle();
-});
-
 function updatePageTitle() {
-    document.title = `blog, no.${currentPage}`;
+    document.title = `journal, no.${currentPage}`;
 }
-
+updatePageTitle();
+});
 function openModal(post) {
+    console.log('Opening modal for:', post);
+
     const modal = document.createElement('div');
     modal.classList.add('modal');
 
@@ -33,10 +34,12 @@ function openModal(post) {
 
     const title = document.createElement('h2');
     title.innerText = post.title || 'Untitled';
+    console.log('Title:', title.innerText);
 
     const date = document.createElement('p');
     date.innerText = post.date || 'No Date';
     date.classList.add('modal-date');
+    console.log('Date:', date.innerText);
 
     let contentElement;
 
@@ -51,6 +54,7 @@ function openModal(post) {
         const input = document.createElement('input');
         input.type = 'password';
         input.id = 'password';
+        input.placeholder = '(case sensitive!)';
 
         const submitButton = document.createElement('button');
         submitButton.type = 'submit';
@@ -70,12 +74,14 @@ function openModal(post) {
                 contentParagraph.innerText = post.content;
                 form.replaceWith(contentParagraph);
             } else {
-                alert('Incorrect password! Please try again.');
+                alert('Incorrect password! Hint: look through the blog folder in my github.. ;)');
             }
         });
     } else {
         contentElement = document.createElement('p');
-        contentElement.innerText = post.content;
+        contentElement.classList.add('modal-content-p'); 
+        contentElement.innerHTML = post.content || 'No Content Available';
+        console.log('Content:', contentElement.innerText);
     }
 
     modalContent.appendChild(title);
@@ -89,6 +95,7 @@ function openModal(post) {
 
     modal.appendChild(modalContent);
     document.body.appendChild(modal);
+    modalContent.offsetHeight;
 
     setTimeout(() => {
         modal.classList.add('show');

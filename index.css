@@ -27,7 +27,8 @@ body.fade-in {
 }
 
 .maindivider {
-  background: url("");
+  background: url("/IMAGES/msecond.jpg");
+  background-position-y: 800px;
   border: 2px dotted #725c3f91;
   width: 850px;
   height: min-content;
@@ -38,7 +39,7 @@ body.fade-in {
 
 header {
   background: #fff5eb;
-  background: url("plaid.jpg");
+  background: url("/IMAGES/plaid.jpg");
   background-size: 300px;
   width: 100%;
   height: 50px;
@@ -90,7 +91,7 @@ nav {
 }
 
 .navtitle {
-  background: url("lanterns.jpg");
+  background: url("/IMAGES/lanterns.jpg");
   background-size: 100px;
   text-align: center;
   padding: 8px;
@@ -180,7 +181,7 @@ aside {
 
 #afirst,
 #msecond {
-  background: url("aside.jpg");
+  background: url("/IMAGES/aside.jpg");
   align-items: center;
   display: grid;
 }
@@ -206,7 +207,7 @@ aside {
 }
 
 article {
-  background: url("article.jpg");
+  background: url("/IMAGES/article.jpg");
   background-size: 200px;
   display: inline-block;
   width: 100%;
@@ -292,7 +293,7 @@ article section {
 }
 
 footer {
-  background: url("plaid.jpg");
+  background: url("/IMAGES/plaid.jpg");
   background-size: 300px;
   display: inline-block;
   width: 100%;

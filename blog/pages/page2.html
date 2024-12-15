@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../blog.css">
-    <title>Blog - Page 2</title>
+    <title>{{ page_title }}</title>
 </head>
+
 <body>
     <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
     <script>
@@ -13,21 +15,42 @@
             document.body.classList.add('fade-in');
         });
     </script>
-    <header>
-        <h1>journal</h1>
-    </header>
-    <div id="posts">
-        
+    <main>
+        <header>
+            <marquee direction=right scrolldelay=60>P.S.: try finding the secret password... it's hidden in here somewhere... good luck!!!</marquee>
+            <h1>Sincerely Yours, Forever Mer</h1>
+        </header>
+
+        <div class="posts">
         <div class="post">
-            <h3>Post 4</h3>
-            <p class="post-date">N/A</p>
+            <h2 class="post-title">Post 4</h2>
+            <p  class="post-date">N/A</p>
             <p class="post-snippet">Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id....</p>
-            <button class="read-more" data-post-id="4">Read More</button>
+            <button class="read-more" data-post-id="6">Read More</button>
         </div>
+        <div id="pagination"><a href="page1.html">previous</a> | <a href="page1.html">next</a></div></div>
+
+        <nav>
+            <div class="navtitle">
+              ABOUT
+            </div>
+            <p>an intensely kafkaesque and concerningly personal online diary of a hyperemotional and melodramatic teenage girl!</p>
+            <div class="navtitle">
+              STATS
+            </div>
+            <p><i>FEELING: </i><img src="https://moods.imood.com/display/uname-merearth/fg-3F403F/bg-FFFBF2/trans-1/imood.gif" alt="The current mood of merearth at www.imood.com" border="0" style="filter: sepia();"></p>
+            <p><i>TOTAL PAGES: 2</i></p>
+            <div class="navtitle">
+              FUNCTIONALITY
+            </div>
+            <p style="border-bottom: none;">I store my blog entries in a json file so the html files don't get too long and hard to keep track of. the blog entries are converted from raw text to functional html through a python script that allows me to insert all of this blog content through a template html file I coded. An additional javascript is also implemented for the modal pop-ups that appear when you click "read more"!<br>if you want any details or would like my code <b>AND CREDIT ME</b> to use for your own blog, send me an <a href="mailto:mszn71@gmail.com">email</a> or leave a post on my <a href="https://github.com/merszgn/merszgn.github.io/discussions" target="_blank">github discussion</a>.</p>
+          </nav>
         
-    </div>
-    <div id="pagination"><button onclick="location.href='page1.html'">Previous</button></div>
+        
+    </main>
     
+
     <script src="../genmodal.js"></script>
 </body>
+
 </html>
