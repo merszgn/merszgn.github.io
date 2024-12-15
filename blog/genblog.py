@@ -34,12 +34,9 @@ def create_page(posts_to_show, page_number, total_pages):
         posts_html += post_preview
 
     html_content = template_content.replace(
-        '<div class="posts"><div id="pagination">'
-        '<a href="{{previous_page}}">previous</a> | <a href="{{next_page}}">next</a></div>',
-        f'<div class="posts">{posts_html}'
-        f'<div id="pagination"><a href="page{page_number - 1 if page_number > 1 else total_pages}.html">previous</a> | '
-        f'<a href="page{page_number + 1 if page_number < total_pages else 1}.html">next</a></div>'
-    )
+        '<div class="posts"><div id="pagination"><a href="{{previous_page}}">previous</a> | <a href="{{next_page}}">next</a></div></div>',
+        f'<div class="posts">{posts_html}<div id="pagination"><a href="page{page_number - 1 if page_number > 1 else total_pages}.html">previous</a> | <a href="page{page_number + 1 if page_number < total_pages else 1}.html">next</a></div></div>')
+    
     html_content = html_content.replace('<title>journal, no.{{page_number}}</title>', f'<title>journal, no.{page_number}</title>')
     html_content = html_content.replace('<p><i>TOTAL PAGES: {{ total_pages }}</i></p>', f'<p><i>TOTAL PAGES: {total_pages}</i></p>')
 
