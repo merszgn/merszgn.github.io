@@ -1,0 +1,27 @@
+* {
+  color: #725c3f;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+::selection {
+  color: #fdcbc7;
+  background-color: #725c3fb9;
+}
+
+html {
+  background-color: #e7e6c7;
+  filter: blur(0.5px);
+  text-align: center;
+}
+
+body {
+  display: inline-block;
+  width: 1010px;
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+body.fade-in {
+  opacity: 1;
+}
