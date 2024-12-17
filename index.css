@@ -8,6 +8,11 @@
   background-color: #725c3fb9;
 }
 
+@font-face {
+  font-family: Nanum;
+  src: url('../fonts/NanumGothicCoding-Regular.ttf');
+}
+
 html {
   background-color: #e7e6c7;
   filter: blur(0.5px);
