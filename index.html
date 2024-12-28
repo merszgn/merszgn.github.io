@@ -6,158 +6,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>mer.earth</title>
-  <link href="/index.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="layout.css" rel="stylesheet" type="text/css" media="all" />
   <link rel="icon" href="./favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
   <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
-    <script>
-        window.addEventListener('load', function () {
-            document.body.classList.add('fade-in');
-        });
-    </script>
-  <nav>
-    <div class="navtitle">
-      ON-SITE
-    </div>
-    <ul>
-      <a href="/meryem">
-        <li>about me</li>
-      </a>
-      <a href="/music">
-        <li>music</li>
-      </a>
-      <a href="/library">
-        <li>library</li>
-      </a>
-      <a href="/updates">
-        <li>update log <span style="font-weight: bolder; color:#C97678">NEW!!!</span></li>
-      </a>
-      <a href="/blog/pages/page1">
-        <li>blog <span style="font-weight: bolder; color:#C97678">NEW!!!</span></li>
-      </a>
-      <a href="/cookietin">
-        <li>cookie tin</li>
-      </a>
-      <a href="/photography">
-        <li>photography</li>
-      </a>
-      <a href="/gratitude">
-        <li>gratitude journal</li>
-      </a>
-      <a href="/letters">
-        <li>letters to others</li>
-      </a>
-    </ul>
-    <div class="navtitle">
-      CREDENTIALS
-    </div>
-    <ul>
-      <a href="https://www.linkedin.com/in/merszgn/" target="_blank">
-        <li>linkedin</li>
-      </a>
-      <a href="/experiences" target="_blank">
-        <li style="text-indent: 0px; padding-left: 17px;">professional experiences</li>
-      </a>
-    </ul>
-    <div class="navtitle">
-      SOCIAL MEDIA
-    </div>
-    <ul>
-      <a href="https://open.spotify.com/user/erkjyaqw93xmrsrghinv130bd" target="_blank">
-        <li>spotify</li>
-      </a>
-      <a href="https://www.youtube.com/@merszgn" target="_blank">
-        <li>youtube</li>
-      </a>
-      <a href="https://www.instagram.com/merszgn/" target="_blank">
-        <li style="border-bottom: none;">instagram</li>
-      </a>
-    </ul>
-  </nav>
+  <script>
+    window.addEventListener('load', function () {
+      document.body.classList.add('fade-in');
+    });
+  </script>
+  <div class="container">
+    <main>
+      <section>
+        <img src="/IMAGES/snoopy.jpg">
+      </section>
+      <section>
+        <p style="text-indent: 10px;">meryem<i>.earth</i> || <small>turkish, 16, bay area</small></p>
+      </section>
+      <hr style="margin-bottom: -5px; border: 1px dotted #D4D4D6;">
+      <section id="nav">
+        <div class="menu-container" id="menu">
+          <ul class="menu-list">
+            <li><strong>NAVIGATION.</strong></li>
+            <li><a href="/meryem">about me</a></li>
+            <li><a href="/blog/pages/page1.html">blog</a></li>
+            <li>
+              <a href="#">cookie tin</a>
+              <ul class="dropdown">
+                <li style="padding: 5px 0;"><a href="/music">music</a></li>
+                <li><a href="/library/library">library</a></li>
+                <li style="padding: 5px 0 0 0;"><a href="/photography">photography</a></li>
+              </ul>
+            </li>
+            <li><a href="/letters">letters to others</a></li>
+            <li><a href="/experiences">professional experiences</a></li>
+            <li>
+              <a href="#">socials</a>
+              <ul class="dropdown">
+                <li style="padding: 5px 0;"><a href="https://www.linkedin.com/in/merszgn/" target="_blank">linkedin</a>
+                </li>
+                <li style="padding: 0 0 5px 0;"><a href="https://open.spotify.com/user/erkjyaqw93xmrsrghinv130bd"
+                    target="_blank">spotify</a></li>
+                <li style="padding: 0 0 5px 0;"><a href="https://www.instagram.com/merszgn/"
+                    target="_blank">instagram</a></li>
+                <li><a href="https://www.youtube.com/@merszgn" target="_blank">youtube</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- New two-column blog layout -->
+    <div class="posts">
+      <!-- First Column -->
+      <div class="column1">
+        <div class="post">
+          <h2 class="post-title">Post Title 1</h2>
+          <p class="post-date">January 1, 2024</p>
+          <p class="post-snippet">This is a snippet of the first blog post...</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+        <div class="post">
+          <h2 class="post-title">Post Title 2</h2>
+          <p class="post-date">December 28, 2023</p>
+          <p class="post-snippet">This is a snippet of the second blog post...</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+      </div>
 
-  <div class="maindivider">
-    <header>
-      <section>
-        <h1>meryem</h1>
-        <p>.earth</p>
-      </section>
-    </header>
-    <main id="mfirst">
-      <p>
-        <span>Who am I?</span><br>
-        My name is Meryem and I'm a Turkish-Muslim university student residing in the Bay Area of California. I
-        graduated high school in two years and am majoring in biology now at the age of sixteen. I am interested in
-        going to medical school to get an M.D. in anesthesiology. <a href="">"Why anesthesiology?"</a>
-      </p>
-      <p>I've always had an interest in web development and design. Since 2020, I have been on the internet creating
-        websites and pursuing this hobby publicly. I started my first website on <a href="https://neocities.org/browse"
-          target="_blank">Neocities</a>. I have had multiple anonymous websites on the internet since starting this
-        journey. Now, I've become interested in dedicating a webpage entirely to myself and my thoughts.
-      </p>
-      <p>This is my own personal Earth. It is my planet that I must take care of and grow whilst maintaining the balance
-        of. My biggest goal with this website is to show others that having their own "Earth" is the most important part
-        of life. It doesn't have to be a website, necessarily, but an extension of your mind that allows you to express
-        yourself freely; <i>something that brings you peace and joy.</i></p>
-    </main>
-    <aside id="afirst">
-      <p><a href="meryem">personally, me:<br><i style="font-size: 14px;">more about myself.</i></a></p>
-    </aside>
-    <article>
-      <h1><span style="background: #f2edd9">Articles.</span></h1>
-      <section>
-        <img src="https://i.pinimg.com/736x/ca/88/a3/ca88a314696fdd19330c341de04604a2.jpg" /><br />
-        <h2><a href="/articleone">Article One</a></h2>
-        <hr />
-        <p>
-          There will be an Article One shortly... Whenever I feel like writing one.
-        </p>
-      </section>
-      <section>
-        <img src="https://i.pinimg.com/736x/87/19/cb/8719cba14c8f81a46f4aeedcace34dcd.jpg" /><br />
-        <h2><a href="/articletwo">Article Two</a></h2>
-        <hr />
-        <p>
-          And an Article Two, as well. I have a couple more things on the checklist.
-        </p>
-      </section>
-      <section>
-        <img src="https://i.pinimg.com/564x/76/2f/a6/762fa65c21e03b36d7f8aade1d61ebe8.jpg" /><br />
-        <h2><a href="/articlethree">Article Three</a></h2>
-        <hr />
-        <p>
-          An Article Three would also fit into this small polaroid section.
-        </p>
-      </section>
-    </article>
-    <main id="msecond" style="background-image: url(msecond.jpg);">
-      <p><a href="/selfeval">self-eval journal:<br><i style="font-size: 14px;">for your mind and soul.</i></a></p>
-    </main>
-    <aside id="asecond">
-      <p>
-        <span>What is a Self-Evaluation Journal? </span><br>
-        How do you find your peace of mind in the constant rumble of life, work, school, and personality? It's important
-        to have an outlet for all of the struggles, happiness, and anger you may be feeling during these times. A
-        self-evaluation journal is what I like to call my little notebook of questions! If there's a personal question
-        you'd like to answer in the <a href="">self-eval journal</a>, take a go at it yourself! Write down your thoughts
-        on a paper, a notes app, or even just talk to yourself about it in your head.
-      </p>
-      <p>
-        A big part of the self-evaluation journal is to be completely honest with yourself. Don't sugarcoat situations
-        to make yourself feel better. It's all about clarity and truth. After all, what's the point of self-evaluation
-        if there's nothing left to evaluate?
-      </p>
-      <p>The reason I started my own self-evulation journal was to get to know myself better and get to the root of my
-        deepest troubles and regrets. It has helped me grow and become a better version of myself ever since.</p>
-    </aside>
-    <footer><i>
-        <p>A better version of ourselves to create a better version of our Earth.</p>
-      </i><br><i>
-        <p>“Forgive me, for all the things I did but mostly for the ones that I did not.”
-          ― Donna Tartt, The Secret History</p>
-      </i></footer>
+      <!-- Second Column -->
+      <div class="column2">
+        <div class="post">
+          <h2 class="post-title">Post Title 3</h2>
+          <p class="post-date">December 25, 2023</p>
+          <p class="post-snippet">This is a snippet of the third blog post...</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+        <div class="post">
+          <h2 class="post-title">Post Title 4</h2>
+          <p class="post-date">December 20, 2023</p>
+          <p class="post-snippet">This is a snippet of the fourth blog post...</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+        <div class="post">
+          <h2 class="post-title">Post Title 5</h2>
+          <p class="post-date">December 18, 2023</p>
+          <p class="post-snippet">This is a snippet of the fifth blog post...</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+      </div>
+    </div>
   </div>
+  <footer>
+    all rights reserved. © 2024
+  </footer>
+  <script>
+    const menuItems = document.querySelectorAll('.menu-list > li');
+    menuItems.forEach(item => {
+      item.addEventListener('click', function (e) {
+        e.stopPropagation();
+        this.classList.toggle('open');
+      });
+    });
+  </script>
 </body>
 
 </html>
