@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/style.css" rel="stylesheet" type="text/css">
+    <link href="/about.css" rel="stylesheet" type="text/css">
     <meta name="author" content="Meryem Sezgin" />
     <meta name="description" content="" />
 
@@ -113,83 +114,46 @@
     <article id="index-header"></article>
 
     <article>
-        <h1 class="title">Who am I?</h1>
+        <h1 class="title">Meryem Sezgin.</h1>
         <p>
-            My name is Meryem and I'm a Turkish-Muslim university student residing in the Bay Area of California. I
-            tested out of high school in my sophomore year and am now majoring in biology. I am interested in
-            going to medical school to get an M.D. in anesthesiology. <a href="">"Why anesthesiology?"</a>
+            I dislike the straight-forward and boring concept of a standard about page that most individuals tend to employ. For my own introduction, I chose to display several short essays that delve deeper into who I truly am and my background. These essays utilize themes of fruits and animals to, metaphorically and melodramatically, elucidate my growth as a human being and what I want to become.
         </p>
-        <p>I've always had an interest in web development and design. Since 2020, I have been on the internet creating
-            websites and pursuing this hobby publicly. I started my first website on <a
-                href="https://neocities.org/browse" target="_blank">Neocities</a>. I have had multiple anonymous
-            websites on the internet since starting this
-            journey. Now, I've become interested in dedicating a webpage entirely to myself and my thoughts.
+        <p class="subtitle">Note: This page is not complete yet.</p>
+        <p>
+        <nav>
+            <button class="tablinks" id="defaultOpen" onclick="openPage(event, 'one')">ONE</button>
+            <button class="tablinks" onclick="openPage(event, 'two')">TWO</button>
+            <button class="tablinks" onclick="openPage(event, 'three')">THREE</button>
+            <button class="tablinks" onclick="openPage(event, 'four')">FOUR</button>
+            <button class="tablinks" onclick="openPage(event, 'five')">FIVE</button>
+        </nav>
         </p>
-        <p>This is my own personal Earth. I consider it to be a separated part of myself which I must provide care to.
-            My
-            biggest goal with <span class="gradient-text">meryem.earth</span> is to show others that having their
-            own "Earth" is the most important part of life. It doesn't have to be a website, necessarily, but an
-            extension
-            of your mind that allows you to express yourself freely; <i>something that brings you peace and joy.</i> You
-            can read more about my purpose <a href="">here</a>.
-        </p>
+
     </article>
 
-    <article style="text-align: center;">
-        <section>
-            <img src="photos/articleone.jpg" /><br />
-            <h3><a href="/articleone.html">Article One</a></h3>
-            <hr />
-            <p>
-                There will be an Article One shortly... Whenever I feel like writing one.
-            </p>
-        </section>
-        <section>
-            <img src="photos/articletwo.jpg" /><br />
-            <h3><a href="/articletwo.html">Article Two</a></h3>
-            <hr />
-            <p>
-                And an Article Two, as well. I have a couple more things on the checklist.
-            </p>
-        </section>
-        <section>
-            <img src="photos/articlethree.jpg" /><br />
-            <h3><a href="/articlethree.html">Article Three</a></h3>
-            <hr />
-            <p>
-                An Article Three would also fit into this small polaroid section.
-            </p>
-        </section>
-    </article>
+    <article>
 
-    <article id="sect">
-        <section id="leftsect">
-        </section>
-        <section id="rightsect">
-            <h1 class="title"><a href="https://poetic-exile.github.io/" target="_blank">[POETIC-EXILE] on Github</a>
-            </h1>
-            <p style="font-style: normal;">
-                <a href="https://poetic-exile.github.io/" target="_blank">[POETIC-EXILE]</a> is my sub-website dedicated
-                to a worldcraft titled Nouranthys. I am working on obtaining a domain name for it soon, but for now it
-                is fully hosted by Github Pages.
-            </p>
-            <p style="font-style: normal;">
-                I created Nouranthys several years ago, having changed the name of it several times before settling on
-                this one. It has recently been going through a mass change due to the files being deleted off of my
-                drive a couple months ago in 2024.
-            </p>
-            <p style="font-style: normal;">
-                The new Nouranthys will be straying far from homebrew campaign writing. I plan to utilize the website as
-                an archive for the lore and literature relevant to Nouranthys. Due to this, the website will be
-                performance-heavy and reliant on scripts to function. I recommend you turn off any script blockers
-                before you venture [POETIC-EXILE].
-            </p>
-            <p style="font-style: normal;">
-                I appreciate all interest in my worldcrafts! If you'd like to talk to me about it, my email is always
-                open for discussion!
-            </p>
-        </section>
+        <main>
+            <div id="one" class="tabcontent">
+                <h1>Pomegranatalia</h1>
+            </div>
 
+            <div id="two" class="tabcontent">
+                <h1>American Strawberry</h1>
+            </div>
+
+            <div id="three" class="tabcontent">
+                <h1>Viceroy</h1>
+            </div>
+
+            <div id="four" class="tabcontent">
+                <h1>Fruitless Metamorphoses</h1>
+            </div>
+
+            <div id="five" class="tabcontent">
+                <h1>Dissection of a Frog</h1>
+            </div>
+        </main>
     </article>
 
     <footer>
@@ -233,6 +197,22 @@
                 this.classList.toggle('open');
             });
         });
+    </script>
+    <script>
+        function openPage(evt, pageName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(pageName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
     </script>
 </body>
 

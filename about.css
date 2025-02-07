@@ -1,0 +1,22 @@
+nav {
+    height: fit-content;
+    width: 65vw;
+    text-align: center;
+}
+
+.tabcontent {
+    border-top: none;
+    padding: 5px;
+}
+
+.tablinks {
+    background-color: inherit;
+    cursor: copy;
+    font-size: 15px;
+    border: none;
+    font-family: 'Alike';
+}
+
+button {
+    color: var(--link-color);
+}
