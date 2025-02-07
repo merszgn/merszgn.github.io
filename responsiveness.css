@@ -1,0 +1,42 @@
+@media only screen and (max-width: 800px) {
+    article {
+        width: 90vw;
+    }
+
+    article section {
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #sect {
+        width: calc(90vw + 40px);
+    }
+
+    #leftsect {
+        width: calc(90vw + 40px);
+    }
+
+    #rightsect {
+        width: calc(90vw);
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    article {
+        width: 90vw;
+        padding: 30px;
+        border-radius: 0;
+    }
+
+    #sidebar {
+        width: 80vw;
+        left: -80vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #mobile-header .subtitle {
+        display: none;
+    }
+}

@@ -17,6 +17,11 @@ nav {
     font-family: 'Alike';
 }
 
+#essays {
+    height: 500px;
+    overflow-y: scroll;
+}
+
 button {
     color: var(--link-color);
 }

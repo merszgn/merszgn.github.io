@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>meryem.earth</title>
+    <link rel="shortcut icon" href="">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <link href="/contact.css" rel="stylesheet" type="text/css">
+    <link href="/responsiveness.css" rel="stylesheet" type="text/css">
+    <meta name="author" content="Meryem Sezgin" />
+    <meta name="description" content="" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $('body').removeClass('load-in');
+            });
+        });
+    </script>
+</head>
+
+<body class="load-in">
+
+    <header id="mobile-header">
+        <div id="mobile-flex">
+            <div id="mobile-left">
+                <div class="menu-button" title="open menu"><svg xmlns="https://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg></div>
+            </div>
+        </div>
+    </header>
+
+    <aside id="sidebar">
+        <div id="side-content">
+            <div class="close"><a title="close menu"><svg xmlns="https://www.w3.org/2000/svg" width="48" height="48"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg></a></div>
+
+            <div id="side-icon">
+                <img src="/photos/icon.jpg" class="icon" />
+
+                <div class="title"><a href="/index" class="gradient-text">meryem.earth</a></div>
+                <div class="sub-ital">17, turkish, bay area</div>
+
+                <hr style="border: 1px dotted #48383A80; width: 110%;">
+
+                <nav class="upper" id="side-nav">
+                    <ul class="menu-list">
+                        <li><a href="/about">
+                                <span class="nav-text">about</span>
+                            </a></li>
+
+                        <li>
+                            <a class="nav-text">cookie tin</a>
+                            <ul class="dropdown">
+                                <li><a href="/music">
+                                        <span class="dp-text">○ music</span>
+                                    </a></li>
+                                <li><a href="/library">
+                                        <span class="dp-text">○ library</span>
+                                    </a></li>
+                                <li><a href="/literature">
+                                        <span class="dp-text">○ literature</span>
+                                    </a></li>
+                                <li><a href="/letters">
+                                        <span class="dp-text">○ letters</span>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav-text">credentials</a>
+                            <ul class="dropdown">
+                                <li><a href="https://www.linkedin.com/in/merszgn/" target="_blank">
+                                        <span class="dp-text">○ linkedin</span>
+                                    </a></li>
+                                <li><a href="/experiences">
+                                        <span class="dp-text">○ experiences</span>
+                                    </a></li>
+                                <li><a href="/purpose">
+                                        <span class="dp-text">○ my purpose</span>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav-text">socials</a>
+                            <ul class="dropdown">
+                                <li><a href="https://www.instagram.com/merszgn/" target="_blank">
+                                        <span class="dp-text">○ instagram</span>
+                                    </a></li>
+                                <li><a href="https://vsco.co/merszgn/gallery" target="_blank">
+                                        <span class="dp-text">○ vsco</span>
+                                    </a></li>
+                                <li><a href="https://www.youtube.com/@merszgn" target="_blank">
+                                        <span class="dp-text">○ youtube</span>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/contact">
+                                <span class="nav-text">contact me</span>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+    </aside>
+
+    <article id="index-header"></article>
+
+    <article>
+        <h1 class="title">Contact Me</h1>
+        <p><a href="mailto:mszn71@gmail.com" style="font-weight: bold;">Email:</a> My email is the fastest way to reach
+            me. You can expect a reply back within a week. Urgent inquiries should be sent directly here.</p>
+        <p><a href="https://github.com/merszgn/merszgn.github.io/discussions/1" target="_blank"
+                style="font-weight: bold;">Github:</a> The Discussion page of my Github repo is another way to reach me.
+            Inquiries regarding <span class="gradient-text">meryem.earth</span> or [POETIC-EXILE] can be left in here,
+            such as their functionality or an issue you've caught.</p>
+
+    </article>
+
+    <footer>
+        © 2024 Meryem Sezgin. All Rights Reserved.
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-button').click(function () {
+                $('#sidebar').addClass('show');
+            });
+            $('.close').click(function () {
+                $('#sidebar').removeClass('show');
+            });
+        });
+
+        const menuItems = document.querySelectorAll('.menu-list > li');
+        menuItems.forEach(item => {
+            item.addEventListener('click', function (e) {
+                e.stopPropagation();
+                this.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

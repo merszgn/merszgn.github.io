@@ -127,7 +127,7 @@ h5 a:hover,
 
 h1,
 .title {
-    font-size: 1.25em;
+    font-size: 1.3em;
 }
 
 h2 {
@@ -350,6 +350,7 @@ article {
 
 article section {
     display: inline-block;
+    align-items: center;
     vertical-align: top;
     background: white;
     border: 1px solid var(--border-color);
@@ -380,6 +381,10 @@ article section p {
     line-height: 1.5;
 }
 
+article section hr {
+    border: 0.1em dotted var(--text-color);
+}
+
 #sect {
     padding: 0;
     width: calc(65vw + 40px);
@@ -391,7 +396,7 @@ article section p {
     background-image: var(--leftsect-image);
     background-position: center;
     width: 30vw;
-    height: 450px;
+    height: 400px;
     margin: 0;
     padding: 0;
     border: none;
@@ -532,53 +537,4 @@ footer {
 
 #sidebar.show {
     left: 0;
-}
-
-#container {
-    width: 100%;
-    margin: 150px auto 50px auto;
-}
-
-
-@media only screen and (max-width: 800px) {
-    article {
-        width: 90vw;
-    }
-
-    article section {
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    #sect {
-        width: calc(90vw + 40px);
-    }
-
-    #leftsect {
-        width: calc(90vw + 40px);
-    }
-
-    #rightsect {
-        width: calc(90vw);
-        margin-bottom: 50px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    article {
-        width: 90vw;
-        padding: 30px;
-        border-radius: 0;
-    }
-
-    #sidebar {
-        width: 80vw;
-        left: -80vw;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #mobile-header .subtitle {
-        display: none;
-    }
 }

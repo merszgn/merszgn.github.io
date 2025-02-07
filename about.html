@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/style.css" rel="stylesheet" type="text/css">
     <link href="/about.css" rel="stylesheet" type="text/css">
+    <link href="/responsiveness.css" rel="stylesheet" type="text/css">
     <meta name="author" content="Meryem Sezgin" />
     <meta name="description" content="" />
 
@@ -98,6 +99,9 @@
                                 <li><a href="https://www.instagram.com/merszgn/" target="_blank">
                                         <span class="dp-text">○ instagram</span>
                                     </a></li>
+                                <li><a href="https://vsco.co/merszgn/gallery" target="_blank">
+                                        <span class="dp-text">○ vsco</span>
+                                    </a></li>
                                 <li><a href="https://www.youtube.com/@merszgn" target="_blank">
                                         <span class="dp-text">○ youtube</span>
                                     </a></li>
@@ -116,7 +120,10 @@
     <article>
         <h1 class="title">Meryem Sezgin.</h1>
         <p>
-            I dislike the straight-forward and boring concept of a standard about page that most individuals tend to employ. For my own introduction, I chose to display several short essays that delve deeper into who I truly am and my background. These essays utilize themes of fruits and animals to, metaphorically and melodramatically, elucidate my growth as a human being and what I want to become.
+            I dislike the straight-forward and boring concept of a standard about page that most individuals tend to
+            employ. For my own introduction, I chose to display several short essays that delve deeper into who I truly
+            am and my background. These essays utilize themes of fruits and animals to, metaphorically and
+            melodramatically, elucidate my growth as a human being and what I want to become.
         </p>
         <p class="subtitle">Note: This page is not complete yet.</p>
         <p>
@@ -131,27 +138,27 @@
 
     </article>
 
-    <article>
+    <article id="essays">
 
         <main>
             <div id="one" class="tabcontent">
-                <h1>Pomegranatalia</h1>
+                <h2>Pomegranatalia</h2>
             </div>
 
             <div id="two" class="tabcontent">
-                <h1>American Strawberry</h1>
+                <h2>American Strawberry</h2>
             </div>
 
             <div id="three" class="tabcontent">
-                <h1>Viceroy</h1>
+                <h2>Viceroy</h2>
             </div>
 
             <div id="four" class="tabcontent">
-                <h1>Fruitless Metamorphoses</h1>
+                <h2>Fruitless Metamorphoses</h2>
             </div>
 
             <div id="five" class="tabcontent">
-                <h1>Dissection of a Frog</h1>
+                <h2>Dissection of a Frog</h2>
             </div>
         </main>
     </article>
@@ -163,30 +170,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('.info-dropdown').hide();
-            $('.info-button').click(function (event) {
-                $(this).closest('.posts').find('.info-dropdown').slideToggle(500)
-                event.preventDefault();
-                $(this).toggleClass('info-clicked', 500);
-            });
-            var clipboard = new ClipboardJS(".copy-button");
-            $('.copy-message').hide();
-            $('.copy-button').click(function (event) {
-                $(this).closest('.posts').find('.copy-message').fadeIn(500)
-                event.preventDefault();
-                setTimeout(function () {
-                    $('.copy-message').fadeOut(500);
-                }, 2000);
-            });
             $('.menu-button').click(function () {
                 $('#sidebar').addClass('show');
             });
             $('.close').click(function () {
                 $('#sidebar').removeClass('show');
-            });
-            $('#btop').click(function () {
-                $('html, body').animate({ scrollTop: 0 }, 800);
-                return false;
             });
         });
 
