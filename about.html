@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>meryem.earth</title>
+    <link rel="shortcut icon" href="">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <link href="/about.css" rel="stylesheet" type="text/css">
+    <meta name="author" content="Meryem Sezgin" />
+    <meta name="description" content="" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $('body').removeClass('load-in');
+            });
+        });
+    </script>
+</head>
+
+<body class="load-in">
+
+    <header id="mobile-header">
+        <div id="mobile-flex">
+            <div id="mobile-left">
+                <div class="menu-button" title="open menu"><svg xmlns="https://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg></div>
+            </div>
+        </div>
+    </header>
+
+    <aside id="sidebar">
+        <div id="side-content">
+            <div class="close"><a title="close menu"><svg xmlns="https://www.w3.org/2000/svg" width="48" height="48"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg></a></div>
+
+            <div id="side-icon">
+                <img src="/photos/side-icon.jpg" class="icon" />
+
+                <div class="title"><a href="/index" class="gradient-text">meryem.earth</a></div>
+                <div class="sub-ital">17, turkish, bay area</div>
+
+                <hr style="border: 1px dotted #48383A80; width: 110%;">
+
+                <nav class="upper" id="side-nav">
+                    <ul class="menu-list">
+                        <li><a href="/about">
+                                <span class="nav-txt">about</span>
+                            </a></li>
+
+                        <li>
+                            <a href="#" style="padding-left: 78px">cookie tin</a>
+                            <ul class="dropdown">
+                                <li><a href="/music">
+                                        <span class="nav-txt">music</span>
+                                    </a></li>
+                                <li><a href="/library">
+                                        <span class="nav-txt">library</span>
+                                    </a></li>
+                                <li><a href="/literature">
+                                        <span class="nav-txt">literature</span>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/letters">
+                                <span class="nav-txt">letters to others</span>
+                            </a></li>
+                        <li>
+                            <a href="#" style="padding-left: 100px;">socials</a>
+                            <ul class="dropdown">
+
+                                <li><a href="https://www.linkedin.com/in/merszgn/" target="_blank">
+                                        <span class="nav-txt">linkedin</span>
+                                    </a></li>
+                                <li><a href="https://www.instagram.com/merszgn/" target="_blank">
+                                        <span class="nav-txt">instagram</span>
+                                    </a></li>
+                                <li><a href="https://www.youtube.com/@merszgn" target="_blank">
+                                        <span class="nav-txt">youtube</span>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/contact">
+                                <span class="nav-txt">contact me</span>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+    </aside>
+
+    <article id="about-header"></article>
+
+    <article>
+        <h1>Who am I?</h1>
+        <hr>
+        My name is Meryem and I’m a Turkish-Muslim college student residing in the Bay Area of California. I graduated
+        high school in two years and am majoring in biology now at the age of seventeen. I am interested in going to
+        medical school and specializing in anesthesiology.
+
+        I’ve always had an interest in web development and design. Since 2020, around the beginning of the Covid
+        pandemic, I have been on the internet creating websites and pursuing this hobby publicly. I have had multiple
+        anonymous websites on the internet since. Now, I’ve become interested in dedicating a webpage entirely to myself
+        and my thoughts.
+
+
+    </article>
+
+    <article>
+        <h1>My Purpose</h1>
+        <hr>
+        Human beings love materials and possessions. It gives us a sense of being and a reason to live for. I count
+        myself in this group, having been an owner of probably thousands of items throughout my life so far. However, I
+        still feel this slight emptiness in my heart and a lack of belonging. I fear that if I was ever asked what I
+        have contributed to the world, I would be at a loss for words. I realize that I have done a lot of taking from
+        this world but not enough giving.
+
+        My purpose for this website remains to be to give back. By combining my love for the internet/web design and my
+        goal of contributing to this Earth, I have come to the conclusion that meryem.earth shall be a corner of the web
+        where I will share my possessions and thoughts with the rest of the world. I hope that in the process of
+        maintaining this website, I will be able to display the importance of having a balanced sense of materialistic
+        belonging through an extension of your mind that allows you to express yourself freely.
+    </article>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.info-dropdown').hide();
+            $('.info-button').click(function (event) {
+                $(this).closest('.posts').find('.info-dropdown').slideToggle(500)
+                event.preventDefault();
+                $(this).toggleClass('info-clicked', 500);
+            });
+            var clipboard = new ClipboardJS(".copy-button");
+            $('.copy-message').hide();
+            $('.copy-button').click(function (event) {
+                $(this).closest('.posts').find('.copy-message').fadeIn(500)
+                event.preventDefault();
+                setTimeout(function () {
+                    $('.copy-message').fadeOut(500);
+                }, 2000);
+            });
+            $('.menu-button').click(function () {
+                $('#sidebar').addClass('show');
+            });
+            $('.close').click(function () {
+                $('#sidebar').removeClass('show');
+            });
+            $('#btop').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+        });
+
+        const menuItems = document.querySelectorAll('.menu-list > li');
+        menuItems.forEach(item => {
+            item.addEventListener('click', function (e) {
+                e.stopPropagation();
+                this.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
