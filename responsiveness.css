@@ -1,3 +1,19 @@
+@media only screen and (max-width: 1300px) {
+
+    #botmdesc,
+    #botmcover {
+        width: 65vw;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #wishlist section {
+        width: 60vw;
+        margin-bottom: 10px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     article {
         width: 90vw;
@@ -20,6 +36,16 @@
         width: calc(90vw);
         margin-bottom: 50px;
     }
+
+    #botmdesc,
+    #botmcover {
+        width: 43vw;
+    }
+
+    #wishlist section {
+        width: 90vw;
+        margin-bottom: 10px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -36,6 +62,15 @@
 
     #rightsect {
         height: calc(100%);
+    }
+
+    #botmdesc,
+    #botmcover {
+        width: 90vw;
+    }
+
+    #bookshelf section {
+        width: 45vw;
     }
 }
 

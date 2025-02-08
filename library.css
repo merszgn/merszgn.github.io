@@ -1,0 +1,62 @@
+#botmdesc,
+#botmcover {
+    height: auto;
+}
+
+#botmdesc {
+    width: 69%;
+    background: none;
+    border: none;
+}
+
+#botmcover {
+    width: 28%;
+    margin: 0 0 0 auto;
+    text-align: center;
+}
+
+#botm {
+    max-width: 90%;
+    height: auto;
+}
+
+#readmore {
+    background: transparent;
+    border: none;
+    font-family: 'Alike';
+    font-style: italic;
+    text-decoration-line: underline;
+}
+
+#wishlist {
+    text-align: center;
+}
+
+#wishlist section {
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    overflow: hidden;
+}
+
+#wishlist section img {
+    width: auto;
+    height: 90%;
+    border: 1px solid var(--border-color);
+    padding: 0;
+    margin: 10px auto;
+}
+
+#bookshelf section {
+    width: 45%;
+    height: auto;
+    border: none;
+    padding: 0 10px;
+    margin: 0;
+}
+
+#bookshelf ul {
+    text-align: left;
+    margin: 0 0 0 35px;
+    width: fit-content;
+}
