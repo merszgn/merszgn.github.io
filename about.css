@@ -9,6 +9,10 @@ nav {
     padding: 5px;
 }
 
+.tabcontent p {
+    font-size: 0.9em;
+}
+
 .tablinks {
     background-color: inherit;
     cursor: copy;
