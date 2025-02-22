@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>meryem.earth</title>
+    <link rel="shortcut icon" href="">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <link href="/article.css" rel="stylesheet" type="text/css">
+    <link href="/responsiveness.css" rel="stylesheet" type="text/css">
+    <meta name="author" content="Meryem Sezgin" />
+    <meta name="description" content="" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $('body').removeClass('load-in');
+            });
+        });
+    </script>
+</head>
+
+<body class="load-in">
+
+    <header id="mobile-header">
+        <div id="mobile-flex">
+            <div id="mobile-left">
+                <div class="menu-button" title="open menu"><svg xmlns="https://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg></div>
+            </div>
+        </div>
+    </header>
+
+    <div id="sidebar-container"></div>
+    <script>
+        fetch('/sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+
+                const menuItems = document.querySelectorAll('.menu-list > li');
+                menuItems.forEach(item => {
+                    item.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        this.classList.toggle('open');
+                    });
+                });
+            })
+            .catch(error => console.error('Error loading sidebar:', error));
+    </script>
+
+    <article id="index-header"></article>
+
+    <article>
+        <h1 class="title">Violently Misunderstood</h1>
+        <p class="sub-ital">Article Uploaded: February 21, 2025.</p>
+        <p class="sub-ital"><a href="">To view old articles, click here.</a></p>
+
+    </article>
+
+    <article id="essays">
+        <main>
+            <p>The American people of modern day are divided, but there is one theme we are consistent with, one that raised this country into the reigning beast it is today: Our relationship with guns and violence. In fact, our dedication to such egregious obsession reaches an all-time high with men and women dedicating their lifestyles to these matters through gangs and street clans. We witness compelling videos of fights and shootouts happening in those dangerous streets on our television screens daily. While most of us become intrigued by this intensely action-packed realm that does not exist in our monotone middle-class lives, the question of whether our perspective of this unknown world is truly accurate or skewed by the biased media executives remains roughly unanswered. In Joseph Rodriguez’s photograph collection, Gang Life in East L.A., he gives the public an opportunity to understand the unseen and melancholic affairs of gangsters that the news media cannot profit off of. The consumer sees a side of these gang members that is rarely depicted in the contemporary news culture that we regularly observe on broadcasting channels. Rodriguez expands one’s perspective about the way this dystopian “survival of the fittest” street culture is a fight against alienation and fear. Through these black and white snapshots in his collection, he intricately presents how these gangsters have more to their identities and stories than just being a gang member. They are people with struggles, motivations, and a community to provide for.</p>
+            <p>What is the population exposed to when they are presented with live news filled with police sirens, the sudden “bang” of a bullet being shot, and the violent spirit of these terribly savage neighborhoods? Is the allegedly hostile nature of gangs being put on display for the rest of the country to watch as a leisurely activity or as a serious method of raising awareness? In actuality, the public’s enjoyment of watching these “thrilling” gang wars says more about the middle-class involvement in these affairs than the “brutes” possessing the guns and drugs. The attraction to hollywood-style reportage of these East Los Angeles gangs, moreover gangs in general, functions as a key factor in destroying the image of the people involved in the inner city clans, further enabling the immoral monetization of their sorrows and the plague of violence tormenting them. Journalism and news channels understand that unless an unruly and life-threatening conflict is offered, their coverage of the gangs will not stir any interest from middle-class citizens who make up the majority of news spectators. However, Joseph Rodriguez’s photos aim to contradict this belief, as he states: “My aim in photographing gang life in Los Angeles has been to get to the core of…the quiet violence of letting families fall apart, the violence of segregation and isolation” (1996). He grasps the attention of the audience by providing monochrome visuals such as intimidating gangsters posing with gang-affiliated hand signs, young teenagers in prisons, and naive children holding and aiming guns. To add context to these seemingly intimidating snapshots, Rodriguez attaches brief captions to each photograph which reveal aspects that may have never otherwise been considered by only glancing at the pictures. His descriptions invite the viewer into a concealed side of gang life and what it looks like compared to entertainment mediums, namely movies and video games, that romanticize this perilous lifestyle.</p>
+            <p>These photographs acknowledge a reality that isn’t profitably filmlike, but instead provides a new, authentic meaning to what it means to be a “gangster”. He shows the viewer that these gangs aren’t just affiliations but also a family that aids one another. On page three of Rodriguez’s collection, a photograph titled Roth Eldridge and his son Jacques is observed. Eldridge and Jacques are standing on their front porch, looking off into the distance. In the caption, Jacques states that these gangs “give them something to identify with…[and are] a substitution for what our people should be giving them. Everything which the family and society should be giving them”. They are a way for the outcast people of these neighborhoods that are shamed for their poor socioeconomic status to feel a sense of belonging. It gives them a label to take pride in and associate themselves with. Furthermore, on the same page, a family photo titled The Quiles family at home can be observed. Danny Quiles, one of the two sons, is seen holding up a hand sign for his gang affiliation to Marianna Maravilla. He holds his affiliation at a very high degree of devotion. It is yet another paragon of how gangs are more than just a crew; they establish such tight bonds that they are able to make their way into familial standing.</p>
+            <p>Another gang member in East L.A., Chivo, is the subject of many photos in the collection. His story is substantial to understanding the obligation that gang members have in order to survive. On page ten, a photograph of Chivo sitting on a couch and counting up dollar bills  is presented. The caption explains that he was involved in a carjacking crime the previous night and was counting the cash to hand over to the mother of his son in order to pay bills. With no context, the constant illegal activity of gangs can be easily misjudged. However, the condition of their unsafe neighborhoods and poverty-stricken status are unchangeable, which forces them to resort to crimes to handle living expenses. In another photograph on page nine, labeled Chivo mowing the lawn, the caption quotes: “...Mowing the lawn, otherwise my mom will get on my case…I never did heroin and I stopped smoking weed…I used to deal drugs but stopped. I didn't like what it did to people”. The photograph along with the caption illustrates that these gangsters are not inherently violent, heartless monsters. Chivo’s quote allows the viewer to understand, on a deeper level, the cruel upbringing of falling into the ganglife.</p>
+            <p>Rodriguez emphasizes this throughout his collection. He shows that these people are struggling, imperfect human beings, too. On page ten, another photograph of Chivo is displayed. The photograph is Chivo turns a homegirl on to cocaine, where he is seen holding up a tray of cocaine towards a young girl, who is actively using it. Viewing this shot of Chivo after the other pictures may distort one’s perspective of gangsters after finally being able to gain some sympathy towards them. However, this instinct to quickly revert back to shaming gangsters is only an effect of being exposed to the biased reporting of news media for so long. The work of the news media is to paint them as entirely corrupt beings. In reality, these people are not entirely one thing or another. Rodriguez has continuously presented to the viewer how these gangsters are humans who make mistakes and have complex emotions, much like the rest of society.
+            </p>
+            <p>Rodriguez flawlessly brings back the sympathetic view of Chivo through the photograph titled Chivo, from Evergreen, and his friend Boxer sit at the dining room table with his mother and sister on page nine. The photograph depicts the four subjects sitting around a dining room table while Chivo tilts his head down at the table and his mother, sitting across from him, looks down at him. In the caption, Rodriguez points out that Chivo’s mother told him that “he better get a job”. These additions of simple interactions between family members creates a significant emotion for the viewer. Instead of feeling like they are staring at photos of cold-hearted gangsters, they get to analyze the little details and acknowledge that these people have formed a family on their own when there was no one there for them in the beginning. Chivo transforms into a little child being directed by his mother, which allows the audience to understand that their misdeeds are not malicious, but instead a way for them to cope with their own unique world that the middle-class is so foreign to.</p>
+            <p>Joseph Rodriguez shows us through his Gang Life in East L.A. collection that gangsters are not defined solely by their seemingly violent connections. These photographs reveal their strong familial relationships and loyalty to one another. Instead of capturing the physical and intimidating violence that his journalist peers focus on, Rodriguez managed to embody the love, dedication, melancholy, and internal violence these individuals experience. They are not pimps with thousands of dollars in cash, men robbing businesses and escaping in expensive getaway vehicles, or any other glorified, over-the-top silver screen fantasy. His collection presents the realization that these gangsters are more than just a stereotype; they have lives crafted by hardship and community. Their “quiet violence” that Rodriguez mentions is the issues within their own communities: the separation between families over gang affiliations, the continual declining rates of children with an education, and the lack of financial resources predominantly creating the brutal image that the public has of gangsters. Contrary to popular belief, they are the victims of a monstrous cycle of violence. Rodriguez challenges the audience to deeply examine these points and acknowledge the whole story.
+            </p>
+                <h3>Works Cited</h3>
+                <p>Rodríguez, Joseph. “Gang Life in East L.A.” ZoneZero, powerHouse Books, November 1996, <a href="http://v1.zonezero.com/exposiciones/fotografos/rodriguez/default.html" target="_blank">http://v1.zonezero.com/exposiciones/fotografos/rodriguez/default.html</a>.</p>
+        </main>
+    </article>
+
+    <footer>
+        © 2024 Meryem Sezgin. All Rights Reserved.
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Open sidebar when menu button is clicked
+            $('.menu-button').click(function () {
+                $('#sidebar').addClass('show');
+            });
+
+            // Use event delegation to handle close button inside dynamically loaded sidebar
+            $(document).on('click', '.close', function () {
+                $('#sidebar').removeClass('show');
+            });
+        });
+    </script>
+    <script>
+        function openPage(evt, pageName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(pageName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
