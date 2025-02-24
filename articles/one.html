@@ -62,7 +62,7 @@
     <article>
         <h1 class="title">Violently Misunderstood</h1>
         <p class="sub-ital">Article Uploaded: February 21, 2025.</p>
-        <p class="sub-ital"><a href="">To view old articles, click here.</a></p>
+        <p class="sub-ital"><a href="/articles/archive">To view old articles, click here.</a></p>
 
     </article>
 
@@ -82,39 +82,27 @@
         </main>
     </article>
 
-    <footer>
-        © 2024 Meryem Sezgin. All Rights Reserved.
-    </footer>
+    <footer></footer>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script>
         $(document).ready(function () {
-            // Open sidebar when menu button is clicked
             $('.menu-button').click(function () {
                 $('#sidebar').addClass('show');
             });
 
-            // Use event delegation to handle close button inside dynamically loaded sidebar
             $(document).on('click', '.close', function () {
                 $('#sidebar').removeClass('show');
             });
         });
-    </script>
-    <script>
-        function openPage(evt, pageName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(pageName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-        document.getElementById("defaultOpen").click();
     </script>
 </body>
 

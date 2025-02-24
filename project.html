@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/style.css" rel="stylesheet" type="text/css">
-    <link href="/contact.css" rel="stylesheet" type="text/css">
+    <link href="/project.css" rel="stylesheet" type="text/css">
     <link href="/responsiveness.css" rel="stylesheet" type="text/css">
     <meta name="author" content="Meryem Sezgin" />
     <meta name="description" content="" />
@@ -60,13 +60,8 @@
     <article id="index-header"></article>
 
     <article>
-        <h1 class="title">Contact Me</h1>
-        <p><a href="mailto:mszn71@gmail.com" style="font-weight: bold;">Email:</a> My email is the fastest way to reach
-            me. You can expect a reply back within a week. Urgent inquiries should be sent directly here.</p>
-        <p><a href="https://github.com/merszgn/merszgn.github.io/discussions/1" target="_blank"
-                style="font-weight: bold;">Github:</a> The Discussion page of my Github repo is another way to reach me.
-            Inquiries regarding <span class="gradient-text">meryem.earth</span> or [POETIC-EXILE] can be left in here,
-            such as their functionality or an issue you've caught.</p>
+        <h1 class="title">The <span class="sub-ital">Little Hearts Impact</span> Project</h1>
+        <p><span class="subtitle">This page is not complete yet.</span></p>
     </article>
 
     <footer></footer>
@@ -82,12 +77,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script>
         $(document).ready(function () {
-            // Open sidebar when menu button is clicked
             $('.menu-button').click(function () {
                 $('#sidebar').addClass('show');
             });
 
-            // Use event delegation to handle close button inside dynamically loaded sidebar
             $(document).on('click', '.close', function () {
                 $('#sidebar').removeClass('show');
             });

@@ -62,9 +62,9 @@
     <article>
         <h1 class="title">Who am I?</h1>
         <p>
-            My name is Meryem and I'm a Turkish university student residing in the Bay Area of California. I
+            My name is Meryem and I'm a Turkish college student residing in the Bay Area of California. I
             tested out of high school in my sophomore year and am now majoring in biology. I am interested in
-            going to medical school to get an M.D. in anesthesiology. <a href="my-purpose">"Why anesthesiology?"</a>
+            going to medical school to get an M.D. specializing in anesthesiology. <span class="sub-ital"><a href="my-purpose">"Why anesthesiology?"</a></span>
         </p>
         <p>I've always had an interest in web development and design. Since 2020, I have been on the internet creating
             websites and pursuing this hobby publicly. I started my first website on <a
@@ -127,7 +127,7 @@
                 drive a couple months ago in 2024.
             </p>
             <p style="font-style: normal;">
-                The new Nouranthys will be straying far from homebrew campaign writing. I plan to utilize the website as
+                The new Nouranthys will be straying far from homebrew campaign styled writing. I plan to utilize the website as
                 an archive for the lore and literature relevant to Nouranthys. Due to this, the website will be
                 performance-heavy and reliant on scripts to function. I recommend you turn off any script blockers
                 before you venture into [POETIC-EXILE].
@@ -140,9 +140,15 @@
 
     </article>
 
-    <footer>
-        © 2024 Meryem Sezgin. All Rights Reserved.
-    </footer>
+    <footer></footer>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script>

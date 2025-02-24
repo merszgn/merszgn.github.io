@@ -76,9 +76,15 @@
         <a href="/letters/clementine"><div class="envelope"><div class="body"><div class="postcard-details"><span class="stamp">✉️ PAR AVION</span><span class="lines"></span><div class="address"><span class="to-text">To:</span><span class="name">Clementine</span></div></div></div></div></a>
     </article>
 
-    <footer>
-        © 2024 Meryem Sezgin. All Rights Reserved.
-    </footer>
+    <footer></footer>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script>

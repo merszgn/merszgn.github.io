@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/style.css" rel="stylesheet" type="text/css">
-    <link href="/contact.css" rel="stylesheet" type="text/css">
+    <link href="/literature.css" rel="stylesheet" type="text/css">
     <link href="/responsiveness.css" rel="stylesheet" type="text/css">
     <meta name="author" content="Meryem Sezgin" />
     <meta name="description" content="" />
@@ -60,13 +60,35 @@
     <article id="index-header"></article>
 
     <article>
-        <h1 class="title">Contact Me</h1>
-        <p><a href="mailto:mszn71@gmail.com" style="font-weight: bold;">Email:</a> My email is the fastest way to reach
-            me. You can expect a reply back within a week. Urgent inquiries should be sent directly here.</p>
-        <p><a href="https://github.com/merszgn/merszgn.github.io/discussions/1" target="_blank"
-                style="font-weight: bold;">Github:</a> The Discussion page of my Github repo is another way to reach me.
-            Inquiries regarding <span class="gradient-text">meryem.earth</span> or [POETIC-EXILE] can be left in here,
-            such as their functionality or an issue you've caught.</p>
+        <h1 class="title">Literature & Writing</h1>
+        <p>The existence of little things and details keeps me going most days. My motivation fluctuates often and I
+            constantly find myself in a state of melodramatic despair. I have found that writing has been a helpful
+            coping mechanism for me during these times.</p>
+        <p>My writing is typically hermeneutic literature that relies heavily upon reader interpretation. My works can
+            have several meanings depending on your own perspective and personal beliefs. I believe this is one of the
+            stronger elements in my writing: the ability to relate to several audiences through one scripture.</p>
+    </article>
+    <article>
+        <h1 class="title">Featured Work</h1>
+
+        <div class="leftsec">
+            <h3>Viceroy</h3>
+            <p>Insert Your Description Here
+            <span class="sub-ital"><a href="/literature/viceroy">Read More...</a></span></p>
+        </div>
+
+        <section id="litsec"><img src="/photos/arabic.jpg" class="rightsec"></section>
+    </article>
+    <article id="collections">
+        <h1 class="title">Collections</h1>
+        <section>
+            <details>
+                <summary>Short Stories</summary>
+                <ul>
+                    <li><a href="literature/viceroy">Viceroy</a></li>
+                </ul>
+            </details>
+        </section>
     </article>
 
     <footer></footer>
@@ -82,12 +104,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script>
         $(document).ready(function () {
-            // Open sidebar when menu button is clicked
             $('.menu-button').click(function () {
                 $('#sidebar').addClass('show');
             });
 
-            // Use event delegation to handle close button inside dynamically loaded sidebar
             $(document).on('click', '.close', function () {
                 $('#sidebar').removeClass('show');
             });

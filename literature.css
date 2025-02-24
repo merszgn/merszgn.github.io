@@ -1,0 +1,32 @@
+.leftsec {
+    display: inline-block;
+    width: 45vw;
+    border: transparent;
+    box-sizing: border-box;
+}
+
+.rightsec {
+    width: 225px;
+    height: auto;
+    display: inline-block;
+    padding-bottom: 0;
+}
+
+#litsec {
+    width: max-content;
+    height: auto;
+}
+
+#collections section {
+    width: 45%;
+    height: auto;
+    border: none;
+    padding: 0 10px;
+    margin: 0;
+}
+
+#collections ul {
+    text-align: left;
+    margin: 0 0 0 35px;
+    width: fit-content;
+}

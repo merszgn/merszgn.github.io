@@ -197,13 +197,15 @@ strong a:hover {
 }
 
 .menu-list {
-    margin: 0;
-    text-align: right;
+    text-align: left;
 }
 
 ul {
     padding: 0;
-    text-align: right;
+}
+
+li {
+    list-style-type: disc !important;
 }
 
 .menu-list>li {
@@ -327,7 +329,8 @@ ul {
 
 .dp-text {
     font-size: var(--dpt-fs);
-    text-indent: 10px;
+    margin-left: 10px;
+    text-align: left;
 }
 
 #index-header {

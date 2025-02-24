@@ -208,9 +208,15 @@
         </section>
     </article>
 
-    <footer>
-        © 2024 Meryem Sezgin. All Rights Reserved.
-    </footer>
+    <footer></footer>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script>
