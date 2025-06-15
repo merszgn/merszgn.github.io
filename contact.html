@@ -25,6 +25,8 @@
 
 <body class="load-in">
 
+    <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+
     <header id="mobile-header">
         <div id="mobile-flex">
             <div id="mobile-left">
@@ -82,12 +84,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script>
         $(document).ready(function () {
-            // Open sidebar when menu button is clicked
             $('.menu-button').click(function () {
                 $('#sidebar').addClass('show');
             });
 
-            // Use event delegation to handle close button inside dynamically loaded sidebar
             $(document).on('click', '.close', function () {
                 $('#sidebar').removeClass('show');
             });

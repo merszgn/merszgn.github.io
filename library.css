@@ -1,62 +1,53 @@
-#botmdesc,
-#botmcover {
-    height: auto;
-}
-
-#botmdesc {
-    width: 69%;
-    background: none;
-    border: none;
-}
-
-#botmcover {
-    width: 28%;
-    margin: 0 0 0 auto;
-    text-align: center;
-}
-
-#botm {
-    max-width: 90%;
-    height: auto;
-}
-
-#readmore {
-    background: transparent;
-    border: none;
-    font-family: 'Alike';
-    font-style: italic;
-    text-decoration-line: underline;
-}
-
-#wishlist {
-    text-align: center;
-}
-
-#wishlist section {
-    width: 30%;
-    text-align: center;
-    height: 300px;
-    overflow: hidden;
-}
-
-#wishlist section img {
-    width: auto;
-    height: 90%;
-    border: 1px solid var(--border-color);
+#first, #third {
+    display: flexbox;
     padding: 0;
-    margin: 10px auto;
 }
 
-#bookshelf section {
-    width: 45%;
-    height: auto;
-    border: none;
-    padding: 0 10px;
+.columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 2fr));
+    gap: 2em;
+    width: 90%;
+    max-width: 70vw;
+}
+
+.columns>div {
+    text-align: justify;
     margin: 0;
+    width: 100%;
+    min-width: 0;
 }
 
-#bookshelf ul {
-    text-align: left;
-    margin: 0 0 0 35px;
-    width: fit-content;
+section {
+    padding: 0px;
+    min-height: 100px;
+}
+
+.left {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.left>section, .right>section {
+    margin: 1em 0;
+}
+
+.right {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#first>.left>section {
+    min-height: 24vh;
+    max-height: 24vh;
+}
+
+#first>.right>section {
+    min-height: 50vh;
+    max-height: 50vh;
+}
+
+#third>.left>section, #third>.right>section {
+    min-height: 50vh;
+    max-height: 50vh;
 }

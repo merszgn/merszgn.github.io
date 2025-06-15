@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>meryem.earth</title>
+    <link rel="shortcut icon" href="">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <link href="/responsiveness.css" rel="stylesheet" type="text/css">
+    <meta name="author" content="Meryem Sezgin" />
+    <meta name="description" content="" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $('body').removeClass('load-in');
+            });
+        });
+    </script>
+</head>
+
+<body class="load-in">
+
+    <script src="warning.js"></script>
+
+    <header id="mobile-header">
+        <div id="mobile-flex">
+            <div id="mobile-left">
+                <div class="menu-button" title="open menu"><svg xmlns="https://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg></div>
+            </div>
+        </div>
+    </header>
+
+    <div id="sidebar-container"></div>
+    <script>
+        fetch('/sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+
+                const menuItems = document.querySelectorAll('.menu-list > li');
+                menuItems.forEach(item => {
+                    item.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        this.classList.toggle('open');
+                    });
+                });
+            })
+            .catch(error => console.error('Error loading sidebar:', error));
+    </script>
+
+    <article>
+        <h1 class="title">The Contemporary Devil isn't Real.</h1>
+        <p class="sub-ital">Written 15 March, 2025. Uploaded 4 April, 2025.</p>
+        <p class="sub-ital"><a href="/articles/archive">To view old articles, click here.</a></p>
+
+    </article>
+
+    <article id="essays">
+        <main>
+            <p> “This is what the devil plays before he goes to sleep”, says Tyler, The Creator in his 2009 song
+                “Bastard”. He is often linked to rumors of worshipping the devil and selling his soul, and is just one
+                of many rap artists to face similar allegations. Several other artists, such as Kanye West and Playboi
+                Carti, have been denounced for usage of devilish symbolism and hinting towards themes of satanism in
+                their music, as well. This pattern of accusations can be traced as far back into the early 20th century,
+                where the first blues musicians, like Robert Johnson and Clara Smith, were criticized for similar
+                customs. However, the connection here is much more logical than it seems. Considering that blues music
+                laid the foundation for contemporary rap, there seems to be countless overlaps between the two genres’
+                allegedly devilish manners. Various reasons exist as to why these genres have been rebuked by both
+                God-fearing religious groups and individuals who simply dislike the music produced, but one can observe
+                the most prevalent motives being cultural discrimination and social commentary in lyrics.
+            </p>
+            <p>Blues music, having deep roots in African American culture and exploring divergent emotions and religious
+                values for that time period, was labelled as the “devil’s music”. This formed a sense of fear within
+                conservative communities, both Black and white, which led to a certain dislike towards the genre.
+                Prevalent examples of devilish ways appear in the lyrics of blues musicians like Robert Johnson. His
+                song, “Me and the Devil Blues”, gained traction long after his death for its songwriting which
+                normalizes the view of devils as neutral or positive figures. Johnson sings “Me and the Devil, ooh / was
+                walkin’ side by side…” (1937) and goes on in the track to speak of beating his female partners and
+                death. Other blues figures like Clara Smith received much of the same treatment as Johnson. Her song,
+                “Done Sold My Soul to the Devil”, released in 1924, created much controversy during the time of its
+                release. As stated in the thesis essay titled “Searching for Satan in the Pre-War Devil Blues” by Kyle
+                Mahoney, Smith’s track is known to be “the first commercial blues recording which referenced the devil
+                by name” (2). As two of the most well-known blues figures, the backlash they received from audiences all
+                over America was quite common. However, blues lyrics were not obligated to have mentions of the devil to
+                be accused of such ways.
+            </p>
+            <p> Alongside the cultural factors of Blues music, including African American folklore and tradition,
+                prevalent themes like hardship, sensuality, and revolution established its infamous title as devil’s
+                music. These themes are significantly abundant in many songs by blues artists like Ida Cox, Margaret
+                Carter, and Lucille Bogan. In the 1924 blues song “Wild Women Don’t Have The Blues” by Ida Cox, she
+                sings “When my man starts kicking I let him find another home / I get full of good liquor, walk the
+                streets all night”. The remainder of the song speaks of letting oneself go and becoming a “wild woman”,
+                unwilling to settle for a quiet life. A swift analysis of her lyrics will prove that the devil is not
+                mentioned once throughout the song; however, this does not cease any accusations of the devil’s
+                involvement. Jake Rossen additionally states in his article, “Parental Advisory: When Tipper Gore Took
+                on ‘80s Rock Music”, that blues was considered a sinful parade for being a “corrupting influence” (2023)
+                on younger audiences. Blues was often considered seductive, harmful, and encouraging disobedience,
+                further advancing its reputation as devilish. Margaret Carter, in her 1927 song “I Want Plenty Grease In
+                My Frying Pan”, sings about suggestive relationships and romance. Lucille Bogan faces similar
+                accusations after her 1935 song “B.D. Woman’s Blues”, which speaks of lesbian relationships. However,
+                these songs have deeper meaning to them than the corrupt devil’s music they have been painted as. In
+                “The Historical Roots of Blues Music” by Lamont Pearley Sr., published by the African American
+                Intellectual History Society, the reality of the genre is brought to light. Pearley states that,
+                contrary to popular belief, blues music is an “expression of their experiences as freed Black men and
+                women”, not the music of slaves (2018). These songs conveyed a newfound freedom for African American
+                citizens.
+            </p>
+            <p>Although it may not be for the same reasons any longer, we continue to see instances of similar devilish
+                references in today’s contemporary rap. The impact of modern rap on American culture and society
+                compared to blues music is much more revolved around societal symbolism and shock value. Examples of
+                these contemporary devil references are viewed in many popular pieces of music media, such as Kanye
+                West’s “Devil In a New Dress” track and Playboi Carti’s “Whole Lotta Red” album. These two artists use
+                devilish patterns in their songs for two separate uses, but are still interconnected by the history of
+                blues. In his song, West uses religious symbolism and metaphors to explore themes of temptation, desire,
+                and lust. These are themes that are observably prevalent in early 20th century blues music, and seem to
+                fall into the same category of devil’s music. Kanye incorporates lyrics within the song like “the way
+                you look should be a sin, you my sensation, uh” and “we ain't married, but tonight I need some
+                consummation” to create a bridge between religious and devilish imagery (2010). On the other hand,
+                Playboi Carti’s album uses satanic symbolism to increase shock value in his music. He sings out the
+                music in a voice like a “threatening stage whisper”, as expressed by Paul A. Thompson in an analysis of
+                the album on Pitchfork (2021). The album includes lyrics involving homicide, satan, and female
+                companions. It is largely a very overexaggerated version of the types of metaphors and allegories that
+                were used by blues musicians in the early 1900s.
+            </p>
+            <p> As blues music evolved from its catchy melodies to become influential on genres like controversial
+                contemporary rap, there is no doubt that satanic imagery and “devil’s music” persists in popular culture
+                today. Similarly to musicians like Robert Johnson, who used devilish references to paint stories about
+                his personal journey, modern artists like Kanye West and Tyler, The Creator do the same. Their usage of
+                the devil has much more depth and meaning than they are recognized for. In contrast, the influence of
+                devil imagery can be purely for shock value, as Playboi Carti has proved throughout his musical career.
+                Despite this, Playboi Carti’s albums still harness that feeling of rebelliousness and freedom that
+                original blues music was meant for. The two genres’ significant impact on American society is, among all
+                else, an indicator of how contemporary rap has carried on the “devilish ways” of early blues and not let
+                criticism undermine the imagery that has been a staple in popular music for generations.
+            </p>
+            <h3>Works Cited</h3>
+            <p>Wilcock, Don. “The Devil Didn’t Make Him Do It: Debunking the Robert Johnson Myth.” American Blues Scene,
+                16 Aug. 2022,
+                <a href="www.americanbluesscene.com/2022/08/devil-didnt-make-him-debunking-robert-johnson-myth-3dw/" target="_blank">www.americanbluesscene.com/2022/08/devil-didnt-make-him-debunking-robert-johnson-myth-3dw/</a>.
+            </p>
+            <p>“Me and the Devil Blues - Robert Johnson Blues Foundation.” Robert Johnson Blues Foundation, 11 May 2023,
+                <a href="www.robertjohnsonbluesfoundation.org/track/me-and-the-devil-blues/" target="_blank">www.robertjohnsonbluesfoundation.org/track/me-and-the-devil-blues/</a>.
+            </p>
+            <p>Mahoney, Kyle. Searching for Satan in the Pre-War Devil Blues. 2023,
+                <a href="scholarworks.wm.edu/cgi/viewcontent.cgi?article=2990&context=honorstheses" target="_blank">scholarworks.wm.edu/cgi/viewcontent.cgi?article=2990&context=honorstheses</a>.
+            </p>
+            <p>“Parental Advisory: When Tipper Gore Took on ‘80s Rock Music.” Mental Floss, 14 Sept. 2023,
+                <a href="www.mentalfloss.com/posts/tipper-gore-fought-against-80s-rock-music-parental-advisory" target="_blank">www.mentalfloss.com/posts/tipper-gore-fought-against-80s-rock-music-parental-advisory</a>.
+            </p>
+            <p>Pearley Sr., Lamont. “The Historical Roots of Blues Music – AAIHS.” Aaihs.org, 9 May 2018,
+                <a href="www.aaihs.org/the-historical-roots-of-blues-music/" target="_blank">www.aaihs.org/the-historical-roots-of-blues-music/</a>.
+            </p>
+            <p>“Devil in a New Dress.” Genius, 22 Nov. 2010, <a href="genius.com/Kanye-west-devil-in-a-new-dress-lyrics" target="_blank">genius.com/Kanye-west-devil-in-a-new-dress-lyrics</a>.
+            </p>
+            <p>Thompson, Paul. “Playboi Carti: Whole Lotta Red.” Pitchfork, 5 Jan. 2021,
+                <a href="pitchfork.com/reviews/albums/playboi-carti-whole-lotta-red/" target="_blank">pitchfork.com/reviews/albums/playboi-carti-whole-lotta-red/</a>.
+            </p>
+        </main>
+    </article>
+
+    <footer></footer>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-button').click(function () {
+                $('#sidebar').addClass('show');
+            });
+
+            $(document).on('click', '.close', function () {
+                $('#sidebar').removeClass('show');
+            });
+        });
+    </script>
+</body>
+
+</html>

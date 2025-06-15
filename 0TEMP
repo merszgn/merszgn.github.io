@@ -25,6 +25,8 @@
 
 <body class="load-in">
 
+    <script src="warning.js"></script>
+
     <header id="mobile-header">
         <div id="mobile-flex">
             <div id="mobile-left">
@@ -56,8 +58,6 @@
             })
             .catch(error => console.error('Error loading sidebar:', error));
     </script>
-
-    <article id="index-header"></article>
 
     <article>
         <h1 class="title">Header</h1>

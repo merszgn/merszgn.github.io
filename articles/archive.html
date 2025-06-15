@@ -7,6 +7,7 @@
     <link rel="alternate" type="application/rss+xml" href="{RSS}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/articles/archive.css" rel="stylesheet" type="text/css">
     <link href="/style.css" rel="stylesheet" type="text/css">
     <link href="/contact.css" rel="stylesheet" type="text/css">
     <link href="/responsiveness.css" rel="stylesheet" type="text/css">
@@ -25,8 +26,8 @@
 
 <body class="load-in">
 
-    <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
-    
+    <script src="warning.js"></script>
+
     <header id="mobile-header">
         <div id="mobile-flex">
             <div id="mobile-left">
@@ -59,14 +60,22 @@
             .catch(error => console.error('Error loading sidebar:', error));
     </script>
 
-    <article id="index-header"></article>
+    <article id="prologue">
+        <h1 class="title">Archive.</h1>
+        <p>A simple list dedicated to conserving my previous works.</p>
+    </article>
 
-    <article>
-        <h1 class="title">This page does not exist.</h1>
-        <p>You've clicked on a link that doesn't have a page set up yet. To navigate back to your previous page, click
-            <a href="javascript:history.back()" class="gradient-text">here</a>.
-        </p>
-
+    <article id="list">
+        <section>
+            <ul>
+                <li><a href="/articles/a-formal-apology-to-ourselves">4/4/25, A Formal Apology to Ourselves.</a></li>
+                <li><a href="/articles/the-contemporary-devil-isnt-real">4/4/25, The Contemporary Devil isn't
+                        Real.</a></li>
+                <li><a href="/articles/violently-misunderstood">21/2/25, Violently Misunderstood.</a></li>
+            </ul>
+        </section>
+        <section></section>
+        <section></section>
     </article>
 
     <footer></footer>
@@ -82,19 +91,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script>
         $(document).ready(function () {
+            // Open sidebar when menu button is clicked
             $('.menu-button').click(function () {
                 $('#sidebar').addClass('show');
             });
-            $('.close').click(function () {
-                $('#sidebar').removeClass('show');
-            });
-        });
 
-        const menuItems = document.querySelectorAll('.menu-list > li');
-        menuItems.forEach(item => {
-            item.addEventListener('click', function (e) {
-                e.stopPropagation();
-                this.classList.toggle('open');
+            // Use event delegation to handle close button inside dynamically loaded sidebar
+            $(document).on('click', '.close', function () {
+                $('#sidebar').removeClass('show');
             });
         });
     </script>

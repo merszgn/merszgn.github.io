@@ -1,0 +1,24 @@
+:root {
+    --full-background: #F5F5DC;
+    --article-color: #FEFEFA;
+    --border-color: #48383A;
+    --shadow-color: #dcdcdc;
+    --divider-image: url("/photos/about/divider.jpg");
+}
+
+#list {
+    display: flex;
+    padding: 0;
+}
+
+#list>section {
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin: 0.5em auto;
+}
+
+#list>section> ul li {
+    display: list-item;
+    list-style-type: none !important;
+}

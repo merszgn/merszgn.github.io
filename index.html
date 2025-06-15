@@ -7,7 +7,9 @@
     <link rel="alternate" type="application/rss+xml" href="{RSS}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/index.css" rel="stylesheet" type="text/css">
     <link href="/style.css" rel="stylesheet" type="text/css">
+    <link href="/contact.css" rel="stylesheet" type="text/css">
     <link href="/responsiveness.css" rel="stylesheet" type="text/css">
     <meta name="author" content="Meryem Sezgin" />
     <meta name="description" content="" />
@@ -24,15 +26,19 @@
 
 <body class="load-in">
 
+    <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+
+    <script src="warning.js"></script>
+
     <header id="mobile-header">
         <div id="mobile-flex">
             <div id="mobile-left">
                 <div class="menu-button" title="open menu"><svg xmlns="https://www.w3.org/2000/svg" width="24"
                         height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                        <line x1="0" y1="12" x2="25" y2="12"></line>
+                        <line x1="0" y1="6" x2="25" y2="6"></line>
+                        <line x1="0" y1="18" x2="25" y2="18"></line>
                     </svg></div>
             </div>
         </div>
@@ -56,88 +62,109 @@
             .catch(error => console.error('Error loading sidebar:', error));
     </script>
 
+    <header id="full">
+        <h1>A gallery,<br>a mess,<br>an archive.</h1>
+        <p class="sub-ital">A collection of my human experience.</p>
+    </header>
 
-    <article id="index-header"></article>
+    <article id="prologue">
+        <section id="left">
+            <p><i>The state you find yourself in quite often is a reflection of who you might be, or rather who you
+                    already are.</i> My great-grandmother used to peel the skin off of fresh peaches for me when I was
+                young. I would eat the fruit, devouring every slice she would set down. The plate was never full and nor
+                was it truly ever empty. My hands would occupy the space, effectively eliminating the entire purpose of
+                the porcelain dish altogether. In a bowl to the side, long strips of red, the skin, would lie. I’d eat
+                these strips after there were no more slices of sweet fruit left. It felt wrong to throw them away. They
+                spoke my name, pleading to not be mixed with the discarded pieces of food preceding them.</p>
 
-    <article>
-        <h1 class="title">Who am I?</h1>
-        <p>
-            My name is Meryem and I'm a Turkish college student residing in the Bay Area of California. I
-            tested out of high school in my sophomore year and am now majoring in biology. I am interested in
-            going to medical school to get an M.D. specializing in anesthesiology. <span class="sub-ital"><a href="my-purpose">"Why anesthesiology?"</a></span>
-        </p>
-        <p>I've always had an interest in web development and design. Since 2020, I have been on the internet creating
-            websites and pursuing this hobby publicly. I started my first website on <a
-                href="https://neocities.org/browse" target="_blank">Neocities</a>. I have had multiple anonymous
-            websites on the internet since starting this
-            journey. Now, I've become interested in dedicating a webpage entirely to myself and my thoughts.
-        </p>
-        <p>This is my own personal Earth. I consider it to be a separated part of myself which I must provide care to.
-            My
-            biggest goal with <span class="gradient-text">meryem.earth</span> is to show others that having their
-            own "Earth" is the most important part of life. It doesn't have to be a website, necessarily, but an
-            extension
-            of your mind that allows you to express yourself freely; <i>something that brings you peace and joy.</i> You
-            can read more about my purpose <a href="/my-purpose">here</a>.
-        </p>
-    </article>
+            <p>I remember playing outside in the hot sun. The waves of scorching air would hit my bare back as I ran my
+                shoulders and hands through cold water from the hose in my relatives’ apartment yard. We would sit
+                altogether down by the fences lining the area. It was like a picnic every afternoon. They would all
+                drink their tea and speak while I played, silently yet so loudly, in the dirt and flowers surrounding
+                us. My best childhood memories are still stored in that yard, now beaten up and abandoned by all who
+                ever resided there.</p>
 
-    <article style="text-align: center;" id="articles">
-        <section>
-            <img src="photos/articleone.jpg" /><br />
-            <h3><a href="articles/one">Violently Misunderstood</a></h3>
-            <hr />
-            <p>
-                An essay on East L.A. Gangs and the truth of their identities.
-            </p>
+            <p>I spend much of my time grasping at these memories whenever I can. It seems that the older I get, the
+                more worried I find myself about forgetting who I once was. I spend my nights before bed closing my eyes
+                and replaying every memory I can scavenge in chronological order. Sometimes, I discover that there are
+                memories I could replay the night before but no longer can. I pressure my mind to reiterate voices at
+                the same frequencies I heard them the first time, but in lieu they distort further and, eventually, the
+                entire sentences spoken evanesce from my recollection. These nights are the most worrisome. When the
+                tears descend down my face, I ruminate if they hold fragments of those memories I catch myself
+                forgetting. I quietly wish I could shovel them back into my eye ducts and remain hopeful that they might
+                restore the voices and images in return.</p>
+
+            <p>I see now that my nostalgia does not blossom from a place of sadness, but rather a place of happiness. I
+                play back these memories over and over again to pursue my motivation for living my best life. My only
+                issue with this nostalgic feeling seems to be that I depend so heavily on who I was before that I cannot
+                focus on who I might be now. In my desperation to not forget these heartfelt memories, I fill my mind to
+                the brim with them and leave no room for who I am to develop. Through my writings and projects, I aim to
+                make up for this long-term fault. I want to understand my current self as well as I understand who I
+                once was. I trust <span class="gradient-text">meryem.earth</span> will assist me in achieving this higher purpose.</p>
+
         </section>
-        <section>
-            <img src="photos/articletwo.jpg" /><br />
-            <h3><a href="articles/two">Article Two</a></h3>
-            <hr />
-            <p>
-                And an Article Two, as well. I have a couple more things on the checklist.
-            </p>
-        </section>
-        <section>
-            <img src="photos/articlethree.jpg" /><br />
-            <h3><a href="articles/three">Article Three</a></h3>
-            <hr />
-            <p>
-                An Article Three would also fit into this small polaroid section.
-            </p>
+        <section id="right">
+            <img src="/photos/index/prologue.png">
         </section>
     </article>
 
-    <article id="sect">
-        <section id="leftsect">
-            Empty Space.
-        </section>
-        <section id="rightsect">
-            <h1 class="title"><a href="https://poetic-exile.github.io/" target="_blank">[POETIC-EXILE] on Github</a>
-            </h1>
-            <p style="font-style: normal;">
-                <a href="https://poetic-exile.github.io/" target="_blank">[POETIC-EXILE]</a> is my sub-website dedicated
-                to a worldcraft titled Nouranthys. I am working on obtaining a domain name for it soon, but for now it
-                is fully hosted by Github Pages.
-            </p>
-            <p style="font-style: normal;">
-                I created Nouranthys several years ago, having changed the name of it several times before settling on
-                this one. It has recently been going through a mass change due to the files being deleted off of my
-                drive a couple months ago in 2024.
-            </p>
-            <p style="font-style: normal;">
-                The new Nouranthys will be straying far from homebrew campaign styled writing. I plan to utilize the website as
-                an archive for the lore and literature relevant to Nouranthys. Due to this, the website will be
-                performance-heavy and reliant on scripts to function. I recommend you turn off any script blockers
-                before you venture into [POETIC-EXILE].
-            </p>
-            <p style="font-style: normal;">
-                I appreciate all interest in my worldcrafts! If you'd like to talk to me about it, my email is always
-                open for discussion!
-            </p>
-        </section>
+    <article id="recent">
+        <h1>
+            <a href="/about">Recently Updated.</a>
+        </h1>
+    </article>
 
+    <article id="letter">
+        <section id="left">
+            <h2 class="title"><a href="https://poetic-exile.github.io" target="_blank">Beloved Reader,</a>
+                <p id="sub-ital">A Formal Greeting.</p>
+            </h2>
+            <div class="columns">
+                <div class="one">If you're simple-minded and require a concise desciption, then these little columns are for you. My website is simply an archive / collection of things I am passionate about, as like many other personal domains.
+                </div>
+                <div class="two">I intend to store all of my literature, thoughts, and projects here like a museum of my mind. I hope you discover a reflection of yourself in my writing just as much as I do of myself.
+                </div>
+            </div>
+            <img src="/photos/index/letterleft.jpg">
+        </section>
+        <section id="center">
+            <h3 id="top" translate="no">Verba Volant,
+                <p id="sub-ital">Sed Scripta Manent.</p>
+            </h3>
+
+            <h4 id="bottom">Words to Live By.</h4>
+            <p><strong>«Spoken words fly away, but written words remain.»</strong> We must value the significance of
+                written communication if we wish to maintain the inventiveness of humanity.</p>
+            <h4>Don't Forget Them.</h4>
+        </section>
+        <section id="right">
+            <div style="display: flex;">
+                <img src="/photos/index/letterright.jpg">
+            </div>
+        </section>
+    </article>
+
+    <article id="quote" translate="no" title="«I am nothing in my soul / if not obsessive.»">
+        <h4><strong>«Nihil sum in anima mea</strong></h4>
+        <p><i>nisi obsessa.»</i></p>
+    </article>
+
+    <article id="gallery">
+        <section>
+            <img src="/photos/index/gallery1.jpg">
+            <h1><a href="/articles/a-formal-apology-to-ourselves">A Formal Apology to Ourselves.</a></h1>
+            <p>30 March, 2025.</p>
+        </section>
+        <section>
+            <img src="/photos/index/gallery2.jpg">
+            <h1><a href="/articles/the-contemporary-devil-isnt-real">The Contemporary Devil isn't Real</a></h1>
+            <p>14 March, 2025.</p>
+        </section>
+        <section>
+            <img src="/photos/index/gallery3.jpg">
+            <h1><a href="/articles/violently-misunderstood">Violently Misunderstood</a></h1>
+            <p>9 December, 2024.</p>
+        </section>
     </article>
 
     <footer></footer>
@@ -153,12 +180,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script>
         $(document).ready(function () {
-            // Open sidebar when menu button is clicked
             $('.menu-button').click(function () {
                 $('#sidebar').addClass('show');
             });
 
-            // Use event delegation to handle close button inside dynamically loaded sidebar
             $(document).on('click', '.close', function () {
                 $('#sidebar').removeClass('show');
             });

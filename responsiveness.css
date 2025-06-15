@@ -1,81 +1,103 @@
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 480px) {
+    /* Small Mobile */
 
-    #botmdesc,
-    #botmcover {
-        width: 65vw;
-        margin-bottom: 10px;
+    body {
+        width: 100vw;
     }
-}
 
-@media only screen and (max-width: 1000px) {
-    #wishlist section {
-        width: 60vw;
-        margin-bottom: 10px;
+    #full {
+        height: 40vh;
+        min-width: 100vw;
     }
-}
 
-@media only screen and (max-width: 800px) {
     article {
-        width: 90vw;
+        width: 150vw !important;
+        margin-left: 2em;
     }
 
-    article section {
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    #sect {
-        width: calc(90vw + 40px);
-    }
-
-    #leftsect {
-        width: calc(90vw + 40px);
-    }
-
-    #rightsect {
-        width: calc(90vw);
-        margin-bottom: 50px;
-    }
-
-    #botmdesc,
-    #botmcover {
-        width: 43vw;
-    }
-
-    #wishlist section {
-        width: 90vw;
-        margin-bottom: 10px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    article {
-        width: 90vw;
-        padding: 30px;
-        border-radius: 0;
-    }
-
-    #sidebar {
-        width: 80vw;
-        left: -80vw;
-    }
-
-    #rightsect {
-        height: calc(100%);
-    }
-
-    #botmdesc,
-    #botmcover {
-        width: 90vw;
-    }
-
-    #bookshelf section {
-        width: 85vw;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #mobile-header .subtitle {
+    #prologue>#right {
         display: none;
     }
+
+    #letter>#left>.columns {
+        display: block;
+    }
+
+    #letter>#right {
+        display: none;
+    }
+
+    #gallery {
+        display: block;
+    }
+
+    #gallery>section {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Tablets */
+
+    article {
+        min-width: 90vw;
+    }
+
+    #prologue>#right {
+        display: none;
+    }
+
+    #letter>#left>.columns {
+        display: block;
+    }
+
+    #letter>#right {
+        display: none;
+    }
+
+    #gallery {
+        display: block;
+    }
+
+    #gallery>section {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0.5em;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    /* Laptops */
+
+    article {
+        min-width: 90vw;
+    }
+
+}
+
+@media only screen and (max-width: 1440px) {
+    /* Large desktops */
+
+    article {
+        min-width: 70vw;
+    }
+
+}
+
+@media only screen and (max-width: 2560px) {
+    /* Large Monitors */
+
+    article {
+        max-width: 70vw;
+    }
+
 }

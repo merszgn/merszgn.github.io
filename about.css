@@ -1,7 +1,87 @@
-nav {
-    height: fit-content;
-    width: 65vw;
+:root {
+    --full-background: #F5F5DC;
+    --article-color: #FEFEFA;
+    --border-color: #48383A;
+    --shadow-color: #dcdcdc;
+    --divider-image: url("/photos/about/divider.jpg");
+}
+
+#prologue,
+#essays {
+    display: flex;
+    padding: 0;
+    background: var(--article-color);
+    border: 1px solid var(--full-background);
+    box-shadow: 1px 1px 3px var(--shadow-color), -1px 1px 3px var(--shadow-color);
+}
+
+#prologue>section {
+    background: none;
+    box-shadow: none;
+}
+
+#prologue>#left {
+    min-width: 70%;
+}
+
+#prologue>#right {
+    overflow: hidden;
+    background: none;
+    max-height: min-content;
+    min-height: 25%;
+    padding: 0;
+    margin: 1em;
+    box-shadow: 1px 1px 3px var(--shadow-color), -1px 1px 3px var(--shadow-color);
+}
+
+#right>img {
+    filter: grayscale(0.25);
+    max-width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#divider {
+    background: var(--article-color);
+    background-image: var(--divider-image);
+    border: 1px solid var(--full-background);
+    background-size: cover;
+    filter: blur(0.05em);
+    box-shadow: 1px 1px 3px var(--shadow-color), -1px 1px 3px var(--shadow-color);
     text-align: center;
+}
+
+#divider>h4 {
+    margin-bottom: 0;
+}
+
+#divider>p {
+    text-align: center;
+    margin-top: 0;
+    margin-left: 10em;
+}
+
+
+#essays {
+    height: 500px;
+    overflow-y: hidden;
+}
+
+nav {
+    height: 100%;
+    min-width: 10%;
+    text-align: center;
+}
+
+main {
+    border-left: 1px solid var(--border-color);
+    background-color: var(--article-color);
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar-thumb {
+    border: 6px solid var(--article-color);
 }
 
 .tabcontent {
@@ -21,11 +101,8 @@ nav {
     font-family: 'Alike';
 }
 
-#essays {
-    height: 500px;
-    overflow-y: scroll;
-}
-
 button {
     color: var(--link-color);
+    display: block;
+    margin: 2em auto;
 }

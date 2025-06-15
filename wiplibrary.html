@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/style.css" rel="stylesheet" type="text/css">
-    <link href="/contact.css" rel="stylesheet" type="text/css">
+    <link href="/library.css" rel="stylesheet" type="text/css">
     <link href="/responsiveness.css" rel="stylesheet" type="text/css">
     <meta name="author" content="Meryem Sezgin" />
     <meta name="description" content="" />
@@ -26,7 +26,7 @@
 <body class="load-in">
 
     <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
-    
+
     <header id="mobile-header">
         <div id="mobile-flex">
             <div id="mobile-left">
@@ -43,7 +43,7 @@
 
     <div id="sidebar-container"></div>
     <script>
-        fetch('/sidebar.html')
+        fetch('sidebar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('sidebar-container').innerHTML = data;
@@ -59,14 +59,32 @@
             .catch(error => console.error('Error loading sidebar:', error));
     </script>
 
-    <article id="index-header"></article>
+    <article id="first" class="columns">
+        <div class="left">
+            <section class="manifesto">
+                <h1 class="title">Reading as a Therapy</h1>
+                <p><b>A Valuable Preface.</b> I heavily disagree with the belief that reading is a hobby. Reading is not only a fundamental part of being human but also <a href="/library/reading-as-a-therapy"><i>Read More...</i></a></p>
+            </section>
+            <section>
+                <h1 class="title">Currently Reading</h1>
+            </section>
+        </div>
+        <div class="right">
+            <section>all times</section>
+        </div>
+    </article>
 
-    <article>
-        <h1 class="title">This page does not exist.</h1>
-        <p>You've clicked on a link that doesn't have a page set up yet. To navigate back to your previous page, click
-            <a href="javascript:history.back()" class="gradient-text">here</a>.
-        </p>
+    <article id="second">
+        <section><h1 class="title">2025 Reading Goals</h1></section>
+    </article>
 
+    <article id="third" class="columns">
+        <div class="left">
+            <section>reviews</section>
+        </div>
+        <div class="right">
+            <section>tbr</section>
+        </div>
     </article>
 
     <footer></footer>
@@ -85,16 +103,9 @@
             $('.menu-button').click(function () {
                 $('#sidebar').addClass('show');
             });
-            $('.close').click(function () {
-                $('#sidebar').removeClass('show');
-            });
-        });
 
-        const menuItems = document.querySelectorAll('.menu-list > li');
-        menuItems.forEach(item => {
-            item.addEventListener('click', function (e) {
-                e.stopPropagation();
-                this.classList.toggle('open');
+            $(document).on('click', '.close', function () {
+                $('#sidebar').removeClass('show');
             });
         });
     </script>
