@@ -1,6 +1,7 @@
 #first, #third {
     display: flexbox;
     padding: 0;
+    border: 1px solid red;
 }
 
 .columns {
@@ -23,16 +24,16 @@ section {
     min-height: 100px;
 }
 
-.left {
+.manifesto, .currentreads {
     grid-column: 1;
     grid-row: 1;
 }
 
-.left>section, .right>section {
+#first>section {
     margin: 1em 0;
 }
 
-.right {
+.alltimes {
     grid-column: 2;
     grid-row: 1;
 }
