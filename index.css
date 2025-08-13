@@ -1,3 +1,14 @@
+/* 
+
+    The following CSS is property of [MERYEM.EARTH].
+    It is free to use, copy, alter, study, etc.
+
+    Keep in mind
+        “Immature poets imitate; mature poets steal; bad poets deface what they take, and good poets make it into something better, or at least something different. The good poet welds his theft into a whole of feeling which is unique, utterly different from that from which it was torn.”
+            - T.S. Elliot
+
+*/
+
 :root {
     --full-background: #F5F5DC;
     --article-color: #FEFEFA;
@@ -208,4 +219,114 @@
     margin-top: 0;
     text-indent: 0;
     font-style: italic;
+}
+
+/* 
+
+    RESPONSIVENESS
+
+*/
+
+@media only screen and (max-width: 480px) {
+    /* Small Mobile */
+
+    body {
+        width: 100vw;
+    }
+
+    #full {
+        height: 40vh;
+        min-width: 100vw;
+    }
+
+    article {
+        width: 150vw !important;
+        margin-left: 2em;
+    }
+
+    #prologue>#right {
+        display: none;
+    }
+
+    #letter>#left>.columns {
+        display: block;
+    }
+
+    #letter>#right {
+        display: none;
+    }
+
+    #gallery {
+        display: block;
+    }
+
+    #gallery>section {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Tablets */
+
+    article {
+        min-width: 90vw;
+    }
+
+    #prologue>#right {
+        display: none;
+    }
+
+    #letter>#left>.columns {
+        display: block;
+    }
+
+    #letter>#right {
+        display: none;
+    }
+
+    #gallery {
+        display: block;
+    }
+
+    #gallery>section {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0.5em;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    /* Laptops */
+
+    article {
+        min-width: 90vw;
+    }
+
+}
+
+@media only screen and (max-width: 1440px) {
+    /* Large desktops */
+
+    article {
+        min-width: 70vw;
+    }
+
+}
+
+@media only screen and (max-width: 2560px) {
+    /* Large Monitors */
+
+    article {
+        max-width: 70vw;
+    }
+
 }
