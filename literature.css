@@ -1,28 +1,52 @@
-.leftsec {
-    display: inline-block;
-    width: 45vw;
-    border: transparent;
-    box-sizing: border-box;
+:root {
+    --full-background: #F5F5DC;
+    --article-color: #FEFEFA;
+    --border-color: #48383A;
+    --shadow-color: #dcdcdc;
+    --divider-image: url("/photos/about/divider.jpg");
 }
 
-.rightsec {
-    width: 225px;
-    height: auto;
-    display: inline-block;
-    padding-bottom: 0;
+#feature,
+#collections {
+    display: flex;
+    padding: 0;
+    background: var(--article-color);
+    border: 1px solid var(--full-background);
+    box-shadow: 1px 1px 3px var(--shadow-color), -1px 1px 3px var(--shadow-color);
 }
 
-#litsec {
-    width: max-content;
-    height: auto;
+#feature>section,
+#collections>section {
+    background: none;
+    box-shadow: none;
 }
 
-#collections section {
-    width: 45%;
-    height: auto;
-    border: none;
-    padding: 0 10px;
+#feature>#left {
+    min-width: 70%;
+}
+
+#feature>#right {
+    overflow: hidden;
+    background: none;
+    max-height: min-content;
+    min-height: 25%;
+    padding: 0;
+    margin: 1em;
+    box-shadow: 1px 1px 3px var(--shadow-color), -1px 1px 3px var(--shadow-color);
+}
+
+#right>img {
+    filter: grayscale(0.25);
+    max-width: 100%;
+    display: block;
     margin: 0;
+    padding: 0;
+}
+
+#collections>#left, #collections>#right {
+    min-width: 45%;
+    max-width: 45%;
+    
 }
 
 #collections ul {
