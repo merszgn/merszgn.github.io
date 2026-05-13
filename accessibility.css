@@ -1,0 +1,141 @@
+/* 
+
+    The following CSS is property of [MERYEM.EARTH].
+    It is free to use, copy, alter, study, etc.
+
+    Keep in mind
+        “Immature poets imitate; mature poets steal; 
+        bad poets deface what they take, and good poets make it into something better, 
+        or at least something different. 
+        The good poet welds his theft into a whole of feeling which is unique, 
+        utterly different from that from which it was torn.”
+            - T.S. Elliot
+
+*/
+
+:root {
+    --full-background: #F5F5DC;
+    --article-color: #FEFEFA;
+    --border-color: #48383A;
+    --shadow-color: #dcdcdc;
+    --divider-image: url("/photos/arabic.jpg");
+}
+
+#access {
+    display: block;
+    padding: 0;
+    background: var(--article-color);
+    border: 1px solid var(--full-background);
+    box-shadow: 1px 1px 3px var(--shadow-color), -1px 1px 3px var(--shadow-color);
+}
+
+#access>section {
+    background: none;
+    box-shadow: none;
+}
+
+#divider {
+    background: var(--article-color);
+    background-image: var(--divider-image);
+    border: 1px solid var(--full-background);
+    background-size: cover;
+    filter: blur(0.05em);
+    box-shadow: 1px 1px 3px var(--shadow-color), -1px 1px 3px var(--shadow-color);
+    text-align: center;
+}
+
+#divider>h4>strong {
+    margin-bottom: 0;
+    color: var(--shadow-color);
+}
+
+#divider>p {
+    text-align: center;
+    margin-top: 0;
+    margin-left: 10em;
+    color: var(--shadow-color);
+}
+
+
+nav {
+    height: 100%;
+    min-width: 10%;
+    text-align: center;
+}
+
+main {
+    border-left: 1px solid var(--border-color);
+    background-color: var(--article-color);
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar-thumb {
+    border: 6px solid var(--article-color);
+}
+
+button {
+    color: var(--link-color);
+    display: block;
+    margin: 2em auto;
+}
+
+/* 
+
+    RESPONSIVENESS
+
+*/
+
+@media only screen and (max-width: 480px) {
+    /* Small Mobile */
+
+    body {
+        width: 100vw;
+    }
+
+    #full {
+        height: 40vh;
+        min-width: 100vw;
+    }
+
+    article {
+        width: 150vw !important;
+        margin-left: 2em;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* Tablets */
+
+    article {
+        min-width: 90vw;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    /* Laptops */
+
+    article {
+        min-width: 90vw;
+    }
+
+}
+
+@media only screen and (max-width: 1440px) {
+    /* Large desktops */
+
+    article {
+        min-width: 70vw;
+    }
+
+}
+
+@media only screen and (max-width: 2560px) {
+    /* Large Monitors */
+
+    article {
+        max-width: 70vw;
+    }
+
+}

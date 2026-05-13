@@ -1,3 +1,18 @@
+/* 
+
+    The following script is property of [MERYEM.EARTH].
+    It is free to use, copy, alter, study, etc.
+
+    Keep in mind
+        “Immature poets imitate; mature poets steal; 
+        bad poets deface what they take, and good poets make it into something better, 
+        or at least something different. 
+        The good poet welds his theft into a whole of feeling which is unique, 
+        utterly different from that from which it was torn.”
+            - T.S. Elliot
+
+*/
+
 function showPopup() {
     if (window.innerWidth < 1024) {
       let popup = document.createElement("div");

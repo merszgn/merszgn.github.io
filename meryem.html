@@ -1,0 +1,175 @@
+<!-- The following HTML is property of [MERYEM.EARTH]. -->
+<!--    It is free to use, copy, alter, study, etc. -->
+
+<!--    Keep in mind -->
+<!--       “Immature poets imitate; mature poets steal; -->
+<!--       bad poets deface what they take, and good poets make it into something better, -->
+<!--       or at least something different. -->
+<!--       The good poet welds his theft into a whole of feeling which is unique, -->
+<!--       utterly different from that from which it was torn.” -->
+<!--            - T.S. Elliot -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>meryem.earth</title>
+    <link rel="shortcut icon" href="">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <link href="/meryem.css" rel="stylesheet" type="text/css">
+    <meta name="author" content="Meryem" />
+    <meta name="description" content="" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $('body').removeClass('load-in');
+            });
+        });
+    </script>
+</head>
+
+<body class="load-in">
+
+    <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+
+    <script src="warning.js"></script>
+
+    <header id="mobile-header">
+        <div id="mobile-flex">
+            <div id="mobile-left">
+                <div class="menu-button" title="open menu"><svg xmlns="https://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg></div>
+            </div>
+        </div>
+    </header>
+
+    <div id="sidebar-container"></div>
+    <script>
+        fetch('sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+
+                const menuItems = document.querySelectorAll('.menu-list > li');
+                menuItems.forEach(item => {
+                    item.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        this.classList.toggle('open');
+                    });
+                });
+            })
+            .catch(error => console.error('Error loading sidebar:', error));
+    </script>
+
+
+    <article id="prologue">
+        <section id="left">
+
+            <p><span class="title" style="text-transform: uppercase;">Meryem.</span>
+                I don't have a lot to say about myself. I tried, for several months, to put together something elaborate
+                here, but I'm about as normal as the next person you'll meet. I don't have a unique backstory to tell
+                around a bonfire, or a sob story to make you think I'm some sort of survivor; I simply am who I am and I
+                like what I like.</p>
+            <p>With that being said, I've sewn together five sections that I think put me into perspective a bit better
+                than what some long, dreadfully boring "about me" would.
+            </p>
+
+            </p>
+        </section>
+        <section id="right">
+            <img src="photos/meryem/beginning.jpg">
+        </section>
+    </article>
+
+    <article id="divider" translate="no" title="«Open your heart, / allow yourself to be vulnerable.»">
+        <h4><strong>«Aperi cor tuum,</strong></h4>
+        <p><i>permitte tibi vulnerari.»</i></p>
+    </article>
+
+    <article id="essays">
+        <nav translate="no">
+            <button class="tablinks active" id="defaultOpen" onclick="openPage(event, 'personal')">PROLOGUE</button>
+            <button class="tablinks" onclick="openPage(event, 'one')">i.</button>
+            <button class="tablinks" onclick="openPage(event, 'two')">ii.</button>
+            <button class="tablinks" onclick="openPage(event, 'three')">iii.</button>
+            <button class="tablinks" onclick="openPage(event, 'four')">iv.</button>
+        </nav>
+        <main>
+            <div id="personal" class="tabcontent">
+                <h2>In Theory and Practice
+                </h2>
+                <p><b>I judge books by their covers.</b> It's one of my worst habits but I just can't read a book unless I like how it looks on the outside.
+                </p>
+            </div>
+
+            <div id="one" class="tabcontent">
+                <h2>Kiwi Skins</h2>
+                <p></p>
+
+            </div>
+
+            <div id="two" class="tabcontent">
+                <h2>Just Another Beetle</h2>
+            </div>
+
+            <div id="three" class="tabcontent">
+                <h2>Seven Hundred Seventeen Thousand, Seven Hundred Fifty-Nine</h2>
+            </div>
+
+            <div id="four" class="tabcontent">
+                <h2>Fresh Figs & Other Awakenings</h2>
+            </div>
+        </main>
+    </article>
+
+    <footer></footer>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-button').click(function () {
+                $('#sidebar').addClass('show');
+            });
+
+            $(document).on('click', '.close', function () {
+                $('#sidebar').removeClass('show');
+            });
+        });
+    </script>
+    <script>
+        function openPage(evt, pageName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(pageName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
